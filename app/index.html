@@ -39,17 +39,18 @@
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.green-yellow.min.css"/>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.green-light_green.min.css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
 
   <link rel="stylesheet" href="styles/main.css">
 </head>
-<body class="mdl-color--grey-50">
+<body>
 
 <div class="mdl-layout mdl-js-layout">
 
   <main class="mdl-layout__content">
-    <div class="header" style="position:relative">
+    <div class="header mdl-shadow--4dp" style="position:relative">
 
       <div class="content" style="padding-top: 0;">
 
@@ -101,76 +102,113 @@
       <br>
     </div>
 
+    <div class="white">
     <div class="content" id="info">
-      <div class="white">
-        <div class="mdl-typography--display-2 section-title">What is MVHacks?<br/> What is a Hackathon?</div>
-        <p class="mdl-typography--subhead mediumpad">
-          Before hacking came to mean illegal digital breaking-and-entering, it meant tinkering and creating.
-          build on this traditional form of hacking and encourage invention and innovation by encouraging
-          teams of young programmers to work together to build ideas
-          into realities. Hackathons provide an environment that works to encourage this productivity and
-          creativity by providing a venue, like-minded peers, and experienced mentors to ensure that every
-          student has access to all the tools they need to focus and succeed. MVHacks is a hackathon organized
-          by students at Mountain View High School (Mountain View, CA) for other high school students. It is
-          being hosted by (VENUE HERE) and made possible through the contributions of countless <a
-          class="inlinelink">sponsors</a> and <a class="inlinelink">mentors</a>. Educational seminars
-          on (TOPICS) will help new and old hackers alike learn and develop their skills, our <a
-          class="inlinelink">mentors</a> will help teams refine and implement their ideas, and our
-          judges will recognize and reward outstanding creations.</p>
-        <br/>
-        <p class="mediumtext text-center">Interested? <input type="button" value="Sign Up" id="signup3"
-                                                             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-          <input type="button" value="View FAQ" id="tofaq"
-                 class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"></p>
-        <br>
-        <br>
+
+        <div class="mdl-typography--display-2 section-title">What is MVHacks?</div>
+        <div class="mdl-typography--subhead content-padding">
+          MVHacks is a high school hackathon organized by Mountain View High School students [at VENUE].
+          Experienced and first-time programmers will gather for X hours to turn their ideas into realities.
+        </div>
+        <!--<p class="mediumtext text-center">Interested? <input type="button" value="Sign Up" id="signup3"
+                                                             class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect">
+            | <input type="button" value="View FAQ" id="tofaq"
+                     class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect"></p>-->
       </div>
     </div>
 
-    <div class="offwhite">
+    <div class="colored-bg content-padding mdl-shadow--2dp shadow-margin">
       <div class="content">
         <div class="mdl-typography--display-2 section-title">Schedule</div>
-        <p>TBD</p>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+        <p>More information coming soon</p>
       </div>
     </div>
 
-    <div class="white content">
+    <div>
+      <div class="content content-grid">
       <div class="mdl-typography--display-2 section-title">FAQ</div>
-      <div class="mdl-typography--subhead  mdl-typography--text-left">
-        <div class="mdl-typography--text-left mdl-typography--title section-subtitle">What do I bring?</div>
-        <p>All you need is your school ID, your laptop, and your charger. In addition to this you can bring your
-          sleeping bag if you would like. Remember to install all the software that you will need.</p>
-        <div class="mdl-typography--text-left mdl-typography--title section-subtitle">Do I need a team?</div>
-        <p>You can come with a team if you would like but a team is not needed. If you would like to work in a
-          team, you can find team member at the hackathon.
-        </p>
-        <div class="mdl-typography--text-left mdl-typography--title section-subtitle">What are the rules?</div>
-        <p>Be nice, respectful, and have fun!</p>
+      <div class="staggered-grid">
+        <div class="grid-sizer"></div>
 
-        <div class="mdl-typography--text-left mdl-typography--title section-subtitle">How much does it cost?
+        <div class="mdl-card mdl-shadow--2dp card grid-item">
+          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+            What is a hackathon?
+          </div>
+
+          <div class="mdl-typography--body-1 mdl-typography--text-left">
+            There is a lot of misinformation roaming around about the meaning of the word "hacking". Though it sounds nefarious, hacking is actually completely legal and even beneficial to the digital world as a whole. Hacking is simply a synonym for programming. For instance, the IT guy at your office is a hacker. The CTO of Google is a hacker. And even the creator of Angry Birds is a hacker.
+            <br>MVHacks invites high school students to hack in the positive sense. We encourage invention and innovation by providing the resources for teams of young programmers to work together to turn their ideas into realities. MVHacks creates an environment conducive to productivity and creativity by providing a venue, like-minded peers, and experienced mentors to ensure that every student has access to all the tools they need to focus and succeed.
+          </div>
         </div>
-        <p>It is completely FREE!</p>
+
+        <div class="mdl-card mdl-shadow--2dp card grid-item">
+          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+            What do I bring?
+          </div>
+
+          <div class="mdl-typography--body-1 mdl-typography--text-left">
+            All you need is your school ID, your laptop, and your charger. In addition to this you can bring your
+            sleeping bag if you would like. Remember to install all the software that you will need.
+          </div>
+
+        </div>
+
+        <div class="mdl-card mdl-shadow--2dp card grid-item">
+          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+            Do I need a team?
+          </div>
+
+          <div class="mdl-typography--body-1 mdl-typography--text-left">
+            You can come with a team if you would like but a team is not needed. If you would like to work in a
+            team, you can find team member at the hackathon.
+          </div>
+
+        </div>
+
+        <div class="mdl-card mdl-shadow--2dp card grid-item">
+          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+            What are the rules?
+          </div>
+
+          <div class="mdl-typography--body-1 mdl-typography--text-left">
+            Be nice, respectful, and have fun!
+          </div>
+        </div>
+
+        <div class="mdl-card mdl-shadow--2dp card grid-item">
+          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+            Who can attend?
+          </div>
+
+          <div class="mdl-typography--body-1 mdl-typography--text-left">
+            All high school students are eligible.
+          </div>
+        </div>
+
+        <div class="mdl-card mdl-shadow--2dp card grid-item">
+          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+            How much does it cost?
+          </div>
+
+          <div class="mdl-typography--body-1 mdl-typography--text-left">
+            It is completely FREE!
+          </div>
+        </div>
+
+        <div class="mdl-card mdl-shadow--2dp card grid-item">
+          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+            I have other questions!
+          </div>
+
+          <div class="mdl-typography--body-1 mdl-typography--text-left">
+            Contact us through our Facebook, Twitter, or email (<a href="mailto:info@mv-hacks.com">info@mv-hacks.com</a>).
+          </div>
+        </div>
       </div>
-      <br>
+      </div>
     </div>
 
-
-    <div class="offwhite">
+    <div class="colored-bg content-padding mdl-shadow--2dp shadow-margin">
       <div class="content mdl-typography--subhead">
         <div class="mdl-typography--display-2 section-title">The Team</div>
         <div>
@@ -204,7 +242,7 @@
       </div>
     </div>
 
-    <div class="white">
+    <div class="content">
       <div class="mdl-typography--display-2 section-title">Sponsors</div>
       <a href="http://www.futuristech.co"><img src="images/futuristech.png" width="300px"/></a>
       <br><br><br>

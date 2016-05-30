@@ -1,14 +1,39 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+TODO: Add your info to the team section below
 
-# TEAM
+/* TEAM */
+  Name: Dylan Moreland
+  Twitter: @dillpickle2524
+  Location: Mountain View, CA
 
-  <name> -- <role> -- <twitter>
+  Name: Ben Hoberman
+  Twitter:
+  Location: Mountain View, CA
 
-# THANKS
+  Name: Paran Sonthalia
+  Twitter:
+  Location: Mountain View, CA
 
-  <name>
+  Name: Marc Bacvanski
+  Twitter:
+  Location: Mountain View, CA
 
-# TECHNOLOGY COLOPHON
+  Name: Jacques Trepanier
+  Twitter:
+  Location: Mountain View, CA
 
-  HTML5, CSS3
+  Name: Daniel Ciao
+  Twitter:
+  Location: Mountain View, CA
+
+  Name: David Sillman
+  Twitter:
+  Location: Mountain View, CA
+
+/* THANKS */
+
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Service Worker, Google Web Starter Kit, Gulp
+  Doctype: HTML5
+  IDE: WebStorm

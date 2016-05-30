@@ -24,15 +24,15 @@
 // You can read more about the new JavaScript features here:
 // https://babeljs.io/docs/learn-es2015/
 
-import path from 'path';
-import gulp from 'gulp';
-import del from 'del';
-import runSequence from 'run-sequence';
-import browserSync from 'browser-sync';
-import swPrecache from 'sw-precache';
-import gulpLoadPlugins from 'gulp-load-plugins';
-import {output as pagespeed} from 'psi';
-import pkg from './package.json';
+import path from "path";
+import gulp from "gulp";
+import del from "del";
+import runSequence from "run-sequence";
+import browserSync from "browser-sync";
+import swPrecache from "sw-precache";
+import gulpLoadPlugins from "gulp-load-plugins";
+import {output as pagespeed} from "psi";
+import pkg from "./package.json";
 
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
@@ -109,6 +109,27 @@ gulp.task('scripts', () =>
       // Note: Since we are not using useref in the scripts build pipeline,
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
+      // Component handler
+      './app/styles/src/mdlComponentHandler.js',
+      // Base components
+      './app/styles/src/button/button.js',
+      './app/styles/src/checkbox/checkbox.js',
+      './app/styles/src/icon-toggle/icon-toggle.js',
+      './app/styles/src/menu/menu.js',
+      './app/styles/src/progress/progress.js',
+      './app/styles/src/radio/radio.js',
+      './app/styles/src/slider/slider.js',
+      './app/styles/src/spinner/spinner.js',
+      './app/styles/src/switch/switch.js',
+      './app/styles/src/tabs/tabs.js',
+      './app/styles/src/textfield/textfield.js',
+      './app/styles/src/tooltip/tooltip.js',
+      // Complex components (which reuse base components)
+      './app/styles/src/layout/layout.js',
+      './app/styles/src/data-table/data-table.js',
+      // And finally, the ripples
+      './app/styles/src/ripple/ripple.js',
+      // Main
       './app/scripts/main.js'
       // Other scripts
     ])

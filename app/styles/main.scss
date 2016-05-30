@@ -124,7 +124,7 @@ div {
 }
 
 .card {
-  @include shadow-2dp();
+  @include shadow-4dp();
   padding: 24px;
   min-height: 0;
 }

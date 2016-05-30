@@ -115,6 +115,7 @@ div {
 .grid-item {
   width: calc(33.3% - 8px);
   margin: 4px;
+  box-shadow: 5px 5px 10px #CCCCCC;
 }
 
 .grid-item-width2 {

@@ -4,6 +4,10 @@ html, body {
   padding: 0;
 }
 
+a {
+  color: #25a128;
+}
+
 div {
   padding: 0;
   text-align: center;

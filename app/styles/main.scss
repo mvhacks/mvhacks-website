@@ -1,5 +1,7 @@
 @import "src/material-design-lite";
 
+/* Global Rules */
+
 html, body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 0;
@@ -15,88 +17,6 @@ div {
   text-align: center;
 }
 
-.header {
-  background: url(../images/background.jpg) bottom / cover;
-  background-color: #8bc34a;
-  height: 100vh;
-}
-
-#mvhacks-image {
-  max-height: calc(100vh - 360px);
-  max-width: 100%;
-}
-
-#background-image {
-  opacity: 0.5;
-  height: 100%;
-  width: 100%;
-  object-position: center;
-  object-fit: cover;
-}
-
-.content {
-  position: relative;
-  margin: 0 auto;
-  max-width: 840px;
-  padding: 32px 16px 80px;
-}
-
-.content-grid {
-  padding-left: 4px;
-  padding-right: 4px;
-  max-width: 1280px;
-}
-
-#mc_embed_signup {
-  background: #fff;
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
-  width: 100%;
-}
-
-.sign-up-card {
-  margin: 0 auto;
-  width: calc(100% - 32px);
-  max-width: 400px;
-  min-height: 0;
-  padding: 16px 4px 8px 4px;
-  box-sizing: content-box;
-}
-
-.header > .content {
-  padding-bottom: 200px;
-}
-
-#down-button {
-  position: absolute;
-  bottom: 48px;
-  right: 64px;
-}
-
-.colored-bg {
-  background-color: #4CAF50;
-  color: #fff;
-}
-
-.inlinelink {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
-}
-
-.inlinelink:hover {
-  cursor: pointer;
-}
-
-.person {
-  display: inline-block;
-  margin-left: 4em;
-  margin-right: 4em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
 .section-title {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -106,33 +26,7 @@ div {
   padding-bottom: 8px;
 }
 
-.shadow-margin {
-  margin-bottom: 8px
-}
-
-.grid-sizer {
-  width: 33.3%;
-}
-
-.grid-item {
-  width: calc(33.3% - 8px);
-  margin: 4px;
-}
-
-.grid-item-width2 {
-  width: calc(66.6% - 8px);
-}
-
-.card {
-  @include shadow-4dp();
-  padding: 24px;
-  min-height: 0;
-}
-
-.card > .section-subtitle {
-  padding-bottom: 12px;
-}
-
+// Responsiveness stuff
 @media (max-width: 840px) {
   .grid-sizer {
     width: 50%;
@@ -176,4 +70,136 @@ div {
     max-height: calc(100vh - 300px);
     max-width: 100%;
   }
+}
+
+/* Front Page */
+
+// Background
+.header {
+  background: url(../images/background.jpg) bottom / cover;
+  background-color: #8bc34a;
+  height: 100vh;
+}
+
+.header > .content {
+  padding-bottom: 200px;
+}
+
+#background-image {
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+// Logo
+#mvhacks-image {
+  max-height: calc(100vh - 360px);
+  max-width: 100%;
+}
+
+// Content wrapper
+.content {
+  position: relative;
+  margin: 0 auto;
+  max-width: 840px;
+  padding: 32px 16px 80px;
+}
+
+// Sign up card
+.sign-up-card {
+  margin: 0 auto;
+  width: calc(100% - 32px);
+  max-width: 400px;
+  min-height: 0;
+  padding: 16px 4px 8px 4px;
+  box-sizing: content-box;
+}
+
+// Scroll down button
+#down-button {
+  position: absolute;
+  bottom: 48px;
+  right: 64px;
+}
+
+// FAQ wrapper
+.content-grid {
+  padding-left: 4px;
+  padding-right: 4px;
+  max-width: 1280px;
+}
+
+// TODO: Confirm that this CSS is actually relevant and is targeting something
+/*
+#mc_embed_signup {
+  background: #fff;
+  clear: left;
+  font: 14px Helvetica, Arial, sans-serif;
+  width: 100%;
+}
+*/
+
+// More Info background
+.colored-bg {
+  background-color: #4CAF50;
+  color: #fff;
+}
+
+// TODO: Confirm that this CSS is actually relevant and targets something
+/*
+.inlinelink {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+}
+
+.inlinelink:hover {
+  cursor: pointer;
+}
+*/
+
+// The Team formatting
+.person {
+  display: inline-block;
+  margin-left: 4em;
+  margin-right: 4em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+// TODO: Although this CSS targets the schedule box, changing it doesn't seem to have an effect on anything. OK to remove?
+// Schedule box
+.shadow-margin {
+  margin-bottom: 8px
+}
+
+// FAQ wrapper
+.grid-sizer {
+  width: 33.3%;
+}
+
+// FAQ card
+.grid-item {
+  width: calc(33.3% - 8px);
+  margin: 4px;
+}
+
+// TODO: Confirm that this CSS is actually relevant and targets something
+.grid-item-width2 {
+  width: calc(66.6% - 8px);
+}
+
+// FAQ card
+.card {
+  @include shadow-4dp();
+  padding: 24px;
+  min-height: 0;
+}
+
+// FAQ card title
+.card > .section-subtitle {
+  padding-bottom: 12px;
 }

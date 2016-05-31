@@ -79,10 +79,11 @@
       });
   }
 
+  // Down button event listener
   $('#down-button').click(function() {
     $('.mdl-layout__content').stop().animate(
       {scrollTop: $('#info').offset().top},
-      500,
+      1000,
       'swing',
       function() {}
     );

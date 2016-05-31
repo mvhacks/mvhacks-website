@@ -68,16 +68,19 @@
 <div class="mdl-layout mdl-js-layout">
 
   <main class="mdl-layout__content">
-    <div class="header mdl-shadow--4dp" style="position:relative">
 
+    <!-- Splash page -->
+    <div class="header mdl-shadow--4dp" style="position:relative">
       <div class="content" style="padding-top: 0;">
 
+        <!-- Logo -->
         <div style="max-width: calc(100% - 32px); margin:0 auto;">
           <div style="max-width: 500px; margin:0 auto;">
             <img src="images/mvhacks.png" id="mvhacks-image">
           </div>
         </div>
 
+        <!-- Sign up card -->
         <div class="mdl-card mdl-shadow--2dp sign-up-card">
 
           <div class="mdl-typography--title" style="margin-bottom: 24px; padding: 0 8px">
@@ -86,199 +89,283 @@
           <div class="mdl-typography--body-2" style="padding: 0 8px">
             Get notified when registration opens!
           </div>
+
+          <!-- Susbcribe form -->
           <form action="//mv-hacks.us13.list-manage.com/subscribe/post?u=efea57e10e18e57c79212fcef&amp;id=2de12154cb"
                 method="post" target="_blank" novalidate>
+
+            <!-- Email input -->
             <div class="mdl-textfield mdl-js-textfield "
                  style="margin-left:16px; display:inline-block; width: calc(100% - 130px);">
               <input type="email" name="EMAIL" value="" class="mdl-textfield__input" id="mce-EMAIL">
               <label class="mdl-textfield__label" for="mce-EMAIL">Email</label>
-              <!-- bot prevention-->
+
+              <!-- Bot prevention-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true">
                 <input type="text" name="b_efea57e10e18e57c79212fcef_2de12154cb" tabindex="-1" value="">
               </div>
             </div>
+
+            <!-- Submit button -->
             <div style="display:inline-block;">
               <input type="submit" value="subscribe"
                      class="mdl-button mdl-js-button mdl-js-ripple-effect">
             </div>
-          </form>
-        </div>
+          </form> <!-- end subscribe form -->
+        </div> <!-- end sign up card -->
 
-        <!--<a href="mentorSignUp.html">
+
+        <!--
+        <a href="mentorSignUp.html">
           <button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent"
                   style="margin-top:32px;">
             Mentor Sign-up
           </button>
-        </a>-->
-      </div>
+        </a>
+        -->
+      </div> <!-- end splash page content -->
 
+      <!-- Scroll button -->
       <button id="down-button"
               class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
         <i class="material-icons">expand_more</i>
       </button>
+    </div> <!-- end splash page -->
 
-      <br>
-    </div>
-
+    <!-- What Is MVHacks? -->
     <div class="white">
-    <div class="content" id="info">
+      <div class="content" id="info">
 
+        <!-- Title -->
         <div class="mdl-typography--display-2 section-title">What is MVHacks?</div>
+
+        <!-- Body -->
         <div class="mdl-typography--subhead content-padding">
           MVHacks is a high school hackathon organized by Mountain View High School students [at VENUE].
           Experienced and first-time programmers will gather for X hours to turn their ideas into realities.
         </div>
-        <!--<p class="mediumtext text-center">Interested? <input type="button" value="Sign Up" id="signup3"
-                                                             class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect">
-            | <input type="button" value="View FAQ" id="tofaq"
-                     class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect"></p>-->
-      </div>
-    </div>
+        <!--
+        <p class="mediumtext text-center">Interested?
+              <input type="button" value="Sign Up" id="signup3" class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect">
+              <input type="button" value="View FAQ" id="tofaq" class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect">
+        </p>
+        -->
+      </div> <!-- end content -->
+    </div> <!-- end What Is MVHacks -->
 
+    <!-- Schedule -->
     <div class="colored-bg content-padding mdl-shadow--2dp shadow-margin">
       <div class="content">
         <div class="mdl-typography--display-2 section-title">Schedule</div>
         <p>More information coming soon</p>
-      </div>
-    </div>
+      </div> <!-- end content -->
+    </div> <!-- end schedule -->
 
+    <!-- FAQ -->
     <div>
       <div class="content content-grid">
-      <div class="mdl-typography--display-2 section-title">FAQ</div>
-      <div class="staggered-grid">
-        <div class="grid-sizer"></div>
 
-        <div class="mdl-card  card grid-item">
-          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-            What is a hackathon?
-          </div>
-
-          <div class="mdl-typography--body-1 mdl-typography--text-left">
-            There is a lot of misinformation roaming around about the meaning of the word "hacking". Though it sounds nefarious, hacking is actually completely legal and even beneficial to the digital world as a whole. Hacking is simply a synonym for programming. For instance, the IT guy at your office is a hacker. The CTO of Google is a hacker. And even the creator of Angry Birds is a hacker.
-          </div>
+        <!-- Title -->
+        <div class="mdl-typography--display-2 section-title">
+          FAQ
         </div>
 
-        <div class="mdl-card card grid-item">
-          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-            What is MVHacks?
+        <!-- Content grid -->
+        <div class="staggered-grid">
+          <div class="grid-sizer"></div>
+
+          <!-- Card -->
+          <div class="mdl-card  card grid-item">
+
+            <!-- Title -->
+            <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+              What is a hackathon?
+            </div>
+
+            <!-- Body -->
+            <div class="mdl-typography--body-1 mdl-typography--text-left">
+              There is a lot of misinformation roaming around about the meaning of the word "hacking". Though it sounds
+              nefarious, hacking is actually completely legal and even beneficial to the digital world as a whole.
+              Hacking is simply a synonym for programming. For instance, the IT guy at your office is a hacker. The CTO
+              of Google is a hacker. And even the creator of Angry Birds is a hacker.
+            </div>
           </div>
 
-          <div class="mdl-typography--body-1 mdl-typography--text-left">
-            MVHacks invites high school students to hack in the positive sense. We encourage invention and innovation by providing the resources for teams of young programmers to work together to turn their ideas into realities. MVHacks creates an environment conducive to productivity and creativity by providing a venue, like-minded peers, and experienced mentors to ensure that every student has access to all the tools they need to focus and succeed.
-          </div>
-        </div>
+          <!-- Card -->
+          <div class="mdl-card card grid-item">
 
-        <div class="mdl-card card grid-item">
-          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-            What do I bring?
-          </div>
+            <!-- Title -->
+            <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+              What is MVHacks?
+            </div>
 
-          <div class="mdl-typography--body-1 mdl-typography--text-left">
-            All you need is your school ID, your laptop, and your charger. In addition to this you can bring your
-            sleeping bag if you would like. Remember to install all the software that you will need.
-          </div>
-
-        </div>
-
-        <div class="mdl-card card grid-item">
-          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-            Do I need a team?
+            <!-- Body -->
+            <div class="mdl-typography--body-1 mdl-typography--text-left">
+              MVHacks invites high school students to hack in the positive sense. We encourage invention and innovation
+              by providing the resources for teams of young programmers to work together to turn their ideas into
+              realities. MVHacks creates an environment conducive to productivity and creativity by providing a venue,
+              like-minded peers, and experienced mentors to ensure that every student has access to all the tools they
+              need to focus and succeed.
+            </div>
           </div>
 
-          <div class="mdl-typography--body-1 mdl-typography--text-left">
-            You can come with a team if you would like but a team is not needed. If you would like to work in a
-            team, you can find team member at the hackathon.
+          <!-- Card -->
+          <div class="mdl-card card grid-item">
+
+            <!-- Title -->
+            <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+              What do I bring?
+            </div>
+
+            <!-- Body -->
+            <div class="mdl-typography--body-1 mdl-typography--text-left">
+              All you need is your school ID, your laptop, and your charger. In addition to this you can bring your
+              sleeping bag if you would like. Remember to install all the software that you will need.
+            </div>
           </div>
 
-        </div>
+          <!-- Card -->
+          <div class="mdl-card card grid-item">
 
-        <div class="mdl-card card grid-item">
-          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-            What are the rules?
+            <!-- Title -->
+            <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+              Do I need a team?
+            </div>
+
+            <!-- Body -->
+            <div class="mdl-typography--body-1 mdl-typography--text-left">
+              You can come with a team if you would like but a team is not needed. If you would like to work in a
+              team, you can find team member at the hackathon.
+            </div>
           </div>
 
-          <div class="mdl-typography--body-1 mdl-typography--text-left">
-            Be nice, respectful, and have fun!
-          </div>
-        </div>
+          <!-- Card -->
+          <div class="mdl-card card grid-item">
 
-        <div class="mdl-card card grid-item">
-          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-            Who can attend?
-          </div>
+            <!-- Title -->
+            <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+              What are the rules?
+            </div>
 
-          <div class="mdl-typography--body-1 mdl-typography--text-left">
-            All high school students are eligible.
-          </div>
-        </div>
-
-        <div class="mdl-card card grid-item">
-          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-            How much does it cost?
+            <!-- Body -->
+            <div class="mdl-typography--body-1 mdl-typography--text-left">
+              Be nice, respectful, and have fun!
+            </div>
           </div>
 
-          <div class="mdl-typography--body-1 mdl-typography--text-left">
-            It is completely FREE!
-          </div>
-        </div>
+          <!-- Card -->
+          <div class="mdl-card card grid-item">
 
-        <div class="mdl-card card grid-item">
-          <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-            I have other questions!
+            <!-- Title -->
+            <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+              Who can attend?
+            </div>
+
+            <!-- Body -->
+            <div class="mdl-typography--body-1 mdl-typography--text-left">
+              All high school students are eligible.
+            </div>
           </div>
 
-          <div class="mdl-typography--body-1 mdl-typography--text-left">
-            Contact us through our Facebook, Twitter, or email (<a href="mailto:info@mv-hacks.com">info@mv-hacks.com</a>).
-          </div>
-        </div>
-      </div>
-      </div>
-    </div>
+          <!-- Card -->
+          <div class="mdl-card card grid-item">
 
+            <!-- Title -->
+            <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+              How much does it cost?
+            </div>
+
+            <!-- Body -->
+            <div class="mdl-typography--body-1 mdl-typography--text-left">
+              It is completely FREE!
+            </div>
+          </div>
+
+          <!-- Card -->
+          <div class="mdl-card card grid-item">
+
+            <!-- Title -->
+            <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+              I have other questions!
+            </div>
+
+            <!-- Body -->
+            <div class="mdl-typography--body-1 mdl-typography--text-left">
+              Contact us through our Facebook, Twitter, or email (<a
+              href="mailto:info@mv-hacks.com">info@mv-hacks.com</a>).
+            </div>
+          </div> <!-- end card -->
+        </div> <!-- end staggered grid -->
+      </div> <!-- end content grid -->
+    </div> <!-- end FAQ -->
+
+    <!-- Team List -->
     <div class="colored-bg content-padding mdl-shadow--2dp shadow-margin">
       <div class="content mdl-typography--subhead">
 
         <!-- TODO: Add Dylan to team list -->
-        <div class="mdl-typography--display-2 section-title">The Team</div>
+        <!-- Title -->
+        <div class="mdl-typography--display-2 section-title">
+          The Team
+        </div>
+
+        <!-- People Row 1 -->
         <div>
           <div class="person">
             <img src="images/paran.png"/>
             <p>Paran Sonthalia</p>
           </div>
+
           <div class="person">
             <img src="images/david.png"/>
             <p>David Sillman</p>
           </div>
+
           <div class="person">
             <img src="images/jacques.png"/>
             <p>Jacques Trepanier</p>
           </div>
-        </div>
+        </div> <!-- end row 1 -->
+
+        <!-- People row 2 -->
         <div>
           <div class="person">
             <img src="images/marc.png"/>
             <p>Marc Bacvanski</p>
           </div>
+
           <div class="person">
             <img src="images/ben.png"/>
             <p>Ben Hoberman</p>
           </div>
+
           <div class="person">
             <img src="images/david.png"/>
             <p>Daniel Ciao</p>
           </div>
-        </div>
-      </div>
-    </div>
+        </div> <!-- end row 2 -->
+      </div> <!-- end content -->
+    </div> <!-- end team list -->
 
+    <!-- Sponsors -->
     <div class="content">
-      <div class="mdl-typography--display-2 section-title">Sponsors</div>
-      <a href="http://www.futuristech.co"><img src="images/futuristech.png" width="300px"/></a>
-      <br><br><br>
-    </div>
 
-  </main>
-</div>
+      <!-- Title -->
+      <div class="mdl-typography--display-2 section-title">
+        Sponsors
+      </div>
+
+      <!-- Logos -->
+
+      <!-- Futuristech -->
+      <a href="http://www.futuristech.co">
+        <img src="images/futuristech.png" width="300px"/>
+      </a>
+
+    </div> <!-- end sponsors -->
+
+  </main> <!-- end main content -->
+</div> <!-- end main layout -->
 
 <script>
   (function (i, s, o, g, r, a, m) {

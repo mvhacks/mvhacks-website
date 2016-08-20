@@ -36,16 +36,9 @@
   if ('serviceWorker' in navigator &&
     (window.location.protocol === 'https:' || isLocalhost)) {
     navigator.serviceWorker.register('service-worker.js')
-      .then(function(registration) {
-        // Check to see if there's an updated version of service-worker.js with
-        // new files to cache:
-        // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#service-worker-registration-update-method
-        if (typeof registration.update === 'function') {
-          registration.update();
-        }
-
+      .then(function (registration) {
         // updatefound is fired if service-worker.js changes.
-        registration.onupdatefound = function() {
+        registration.onupdatefound = function () {
           // updatefound is also fired the very first time the SW is installed,
           // and there's no need to prompt for a reload at that point.
           // So check here to see if the page is already controlled,
@@ -55,7 +48,7 @@
             // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#service-worker-container-updatefound-event
             var installingWorker = registration.installing;
 
-            installingWorker.onstatechange = function() {
+            installingWorker.onstatechange = function () {
               switch (installingWorker.state) {
                 case 'installed':
                   // At this point, the old content will have been purged and the
@@ -74,9 +67,9 @@
             };
           }
         };
-      }).catch(function(e) {
-        console.error('Error during service worker registration:', e);
-      });
+      }).catch(function (e) {
+      console.error('Error during service worker registration:', e);
+    });
   }
 
   // Down button event listener

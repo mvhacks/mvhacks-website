@@ -26,52 +26,6 @@ div {
   padding-bottom: 8px;
 }
 
-// Responsiveness stuff
-@media (max-width: 840px) {
-  .grid-sizer {
-    width: 50%;
-  }
-
-  .grid-item-width2 {
-    width: calc(100% - 8px);
-  }
-
-  .grid-item {
-    width: calc(50% - 8px);
-  }
-}
-
-@media (max-width: 600px) {
-  #down-button {
-    left: 50%;
-    right: auto;
-    margin-left: -28px;
-  }
-
-  .grid-sizer {
-    width: 100%;
-  }
-
-  .grid-item {
-    width: calc(100% - 8px);
-  }
-}
-
-@media (max-height: 600px) {
-  #down-button {
-    display: none;
-  }
-
-  .header > .content {
-    padding-bottom: 32px;
-  }
-
-  #mvhacks-image {
-    max-height: calc(100vh - 300px);
-    max-width: 100%;
-  }
-}
-
 /* Front Page */
 
 // Background
@@ -202,4 +156,50 @@ div {
 // FAQ card title
 .card > .section-subtitle {
   padding-bottom: 12px;
+}
+
+// Responsiveness stuff
+@media (max-width: 840px) {
+  .grid-sizer {
+    width: 50%;
+  }
+
+  .grid-item-width2 {
+    width: calc(100% - 8px);
+  }
+
+  .grid-item {
+    width: calc(50% - 8px);
+  }
+}
+
+@media (max-width: 600px) {
+  #down-button {
+    left: 50%;
+    right: auto;
+    margin-left: -28px;
+  }
+
+  .grid-sizer {
+    width: 100%;
+  }
+
+  .grid-item {
+    width: calc(100% - 8px);
+  }
+}
+
+@media (max-height: 600px) {
+  #down-button {
+    display: none;
+  }
+
+  .header > .content {
+    padding-bottom: 32px;
+  }
+
+  #mvhacks-image {
+    max-height: calc(100vh - 300px);
+    max-width: 100%;
+  }
 }

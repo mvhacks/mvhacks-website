@@ -61,6 +61,11 @@ div {
   padding: 32px 16px 80px;
 }
 
+.slab {
+  font-family: 'Roboto Slab', serif;
+  line-height: 28px;
+}
+
 // Sign up card
 .sign-up-card {
   margin: 0 auto;
@@ -85,35 +90,11 @@ div {
   max-width: 1280px;
 }
 
-// TODO: Confirm that this CSS is actually relevant and is targeting something
-/*
-#mc_embed_signup {
-  background: #fff;
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
-  width: 100%;
-}
-*/
-
 // More Info background
 .colored-bg {
   background-color: #4CAF50;
   color: #fff;
 }
-
-// TODO: Confirm that this CSS is actually relevant and targets something
-/*
-.inlinelink {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-  color: inherit;
-}
-
-.inlinelink:hover {
-  cursor: pointer;
-}
-*/
 
 // The Team formatting
 .person {
@@ -148,7 +129,7 @@ div {
 
 // FAQ card
 .card {
-  @include shadow-4dp();
+  @include shadow-2dp();
   padding: 24px;
   min-height: 0;
 }

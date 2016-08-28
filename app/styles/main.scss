@@ -139,6 +139,19 @@ div {
   padding-bottom: 12px;
 }
 
+.footer {
+  padding: ($padding * 2) $padding;
+
+  color: $footer-color;
+  background-color: $footer-bg-color;
+}
+
+.social-button {
+  width: 36px;
+  height: 36px;
+  font-size: 14px;
+}
+
 // Responsiveness stuff
 @media (max-width: 840px) {
   .grid-sizer {

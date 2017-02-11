@@ -28,7 +28,7 @@
 
   <!-- Tile icon for Win8 (144x144 + tile color) -->
   <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-  <meta name="msapplication-TileColor" content="##4CAF50">
+  <meta name="msapplication-TileColor" content="#4CAF50">
 
   <!-- Color the status bar on mobile devices -->
   <meta name="theme-color" content="#4CAF50">
@@ -44,7 +44,9 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script defer src="https://unpkg.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+  <script defer src="../dist/scripts/balancetext.min.js"></script>
+  <script defer src="https://unpkg.com/masonry-layout@4.1.1/dist/masonry.pkgd.min.js"></script>
+  <!--<script defer src="http://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>-->
   <!-- build:js scripts/main.min.js defer-->
   <script src="./styles/src/mdlComponentHandler.js"></script>
   <script src="./styles/src/button/button.js"></script>
@@ -87,9 +89,26 @@
         <!-- Sign up card -->
         <div class="mdl-card mdl-shadow--2dp sign-up-card">
 
-          <div class="slab mdl-typography--title" style="margin-bottom: 22px; padding: 0 8px">
-            Coming Fall 2017
+          <div style="margin-bottom: 22px; padding: 0 8px">
+
+            <div class="slab mdl-typography--title">
+              June 10th-11th, 2017<br/>
+            </div>
+
+            <div class="slab mdl-typography--headline">
+              42 Silicon Valley<br/>
+            </div>
+
+            <div class="slab mdl-typography--body-1" style="vertical-align: middle">
+              <button class="mdl-button mdl-js-button mdl-button--icon">
+                <a href="https://goo.gl/maps/eGfZzJjHkQE2"><i class="material-icons">map</i></a>
+              </button>
+
+              6600 Dumbarton Cir, Fremont
+
+            </div>
           </div>
+
           <div class="mdl-typography--body-2" style="padding: 0 8px">
             Get notified when registration opens!
           </div>
@@ -143,9 +162,13 @@
         <!-- Title -->
         <div class="mdl-typography--display-2 section-title">What is MVHacks?</div>
 
+        <!--<div id="vrview"></div>
+
+        <br/>-->
+
         <!-- Body -->
-        <div class="mdl-typography--subhead content-padding">
-          MVHacks is a high school hackathon organized by Mountain View High School students.
+        <div class="mdl-typography--subhead content-padding balance-text">
+          MVHacks is a high school hackathon at 42 organized by Mountain View High School students.
           Experienced and first-time programmers will gather for 24 hours to turn their ideas into realities.
         </div>
       </div> <!-- end content -->
@@ -182,8 +205,8 @@
 
             <!-- Body -->
             <div class="mdl-typography--body-1 mdl-typography--text-left">
-              A hackathon is an event in which people come together to brainstorm, design, and code projects. The
-              Googleplex venue, like-minded peers, experienced mentors, and informative seminars at MVHacks provide the
+              A hackathon is an event in which people come together to brainstorm, design, and code projects. 42's
+              unique venue, like-minded peers, experienced mentors, and informative seminars at MVHacks provide the
               tools you need to focus and succeed.
             </div>
           </div>
@@ -340,12 +363,13 @@
         Sponsors
       </div>
 
+      <br/>
+
+      <div class="mdl-typography--headline">Interested in sponsoring?</div>
+      <p>Email us at <a href="mailto:contact@mv-hacks.com">contact@mv-hacks.com</a>!</p>
+
       <!-- Logos -->
 
-      <!-- Futuristech -->
-      <a href="http://www.futuristech.co">
-        <img src="images/futuristech.png" width="100px"/>
-      </a>
 
     </div> <!-- end sponsors -->
 
@@ -360,7 +384,13 @@
         <button class="social-button mdl-button mdl-js-button mdl-button--icon"><a
           href="mailto:contact@mv-hacks.com"><img src="images/email.svg"/></a></button>
       </div>
-      <div style="margin-top: 8px; margin-bottom: 8px">Made with 🔥 in Mountain View</div>
+
+      <br/>
+
+      <div class="valign-center" style="margin-top: 8px; margin-bottom: 8px;">
+        Made with&nbsp;<i class="material-icons material-icons-small">keyboard</i>&nbsp;and&nbsp;<i
+        class="material-icons material-icons-small">mouse</i>&nbsp;in Mountain View
+      </div>
     </div>
 
   </main> <!-- end main content -->

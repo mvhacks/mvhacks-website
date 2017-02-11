@@ -86,6 +86,16 @@
     // options
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
-    percentPosition: true
+    percentPosition: true,
   });
+
+  balanceText();
+
+  /*var vrView = new VRView.Player('#vrview', {
+   image: 'images/pano.jpg',
+   is_stereo: false,
+   width: '800px',
+   height: '400px',
+   distance: 2,
+   });*/
 })();

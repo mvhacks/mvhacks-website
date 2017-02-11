@@ -26,6 +26,20 @@ div {
   padding-bottom: 8px;
 }
 
+.balance-text {
+  text-wrap: balanced;
+}
+
+.valign-center {
+  display: inline-flex;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.material-icons-small {
+  font-size: 16px;
+}
+
 /* Front Page */
 
 // Background
@@ -182,6 +196,10 @@ div {
     padding: 16px 16px 32px;
   }
 
+  .content-grid {
+    padding: 8px 8px 32px;
+  }
+
   #down-button {
     left: 50%;
     right: auto;
@@ -193,7 +211,8 @@ div {
   }
 
   .grid-item {
-    width: calc(100% - 8px);
+    width: calc(100% - 16px);
+    margin: 8px;
   }
 }
 

@@ -40,7 +40,7 @@ gulp.task('lint', () =>
   gulp.src(['app/scripts/**/*.js','!node_modules/**'])
     .pipe($.eslint())
     .pipe($.eslint.format())
-    .pipe($.if(!browserSync.active, $.eslint.failAfterError()))
+  //.pipe($.if(!browserSync.active, $.eslint.failAfterError()))
 );
 
 // Optimize images
@@ -128,10 +128,10 @@ gulp.task('scripts', () =>
       // './app/styles/src/data-table/data-table.js',
       // And finally, the ripples
       './app/styles/src/ripple/ripple.js',
-      // Main
-      './app/scripts/main.js',
       // Other scripts
-      './app/scripts/balancetext.min.js'
+      './app/scripts/balancetext.min.js',
+      // Main
+      './app/scripts/main.js'
     ])
       .pipe($.newer('.tmp/scripts'))
       .pipe($.sourcemaps.init())

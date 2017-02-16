@@ -1,4 +1,4 @@
-/*!
+/* !
  *
  *  Web Starter Kit
  *  Copyright 2015 Google Inc. All rights reserved.
@@ -91,7 +91,7 @@
 
   balanceText();
 
-  /*var vrView = new VRView.Player('#vrview', {
+  /* var vrView = new VRView.Player('#vrview', {
    image: 'images/pano.jpg',
    is_stereo: false,
    width: '800px',

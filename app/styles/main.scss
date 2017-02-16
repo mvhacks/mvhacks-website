@@ -197,7 +197,7 @@ div {
   }
 
   .content-grid {
-    padding: 8px 8px 32px;
+    padding: 4px 4px 32px;
   }
 
   #down-button {
@@ -211,8 +211,7 @@ div {
   }
 
   .grid-item {
-    width: calc(100% - 16px);
-    margin: 8px;
+    width: calc(100% - 8px);
   }
 }
 

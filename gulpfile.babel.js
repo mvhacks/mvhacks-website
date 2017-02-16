@@ -18,12 +18,10 @@
  */
 
 'use strict';
-
 // This gulpfile makes use of new JavaScript features.
 // Babel handles this without us having to do anything. It just works.
 // You can read more about the new JavaScript features here:
 // https://babeljs.io/docs/learn-es2015/
-
 import path from "path";
 import gulp from "gulp";
 import del from "del";
@@ -130,8 +128,9 @@ gulp.task('scripts', () =>
       // And finally, the ripples
       './app/styles/src/ripple/ripple.js',
       // Main
-      './app/scripts/main.js'
+      './app/scripts/main.js',
       // Other scripts
+      './app/scripts/balancetext.min.js'
     ])
       .pipe($.newer('.tmp/scripts'))
       .pipe($.sourcemaps.init())

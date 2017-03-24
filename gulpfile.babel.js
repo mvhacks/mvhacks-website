@@ -129,7 +129,6 @@ gulp.task('scripts', () =>
       // And finally, the ripples
       './app/styles/src/ripple/ripple.js',
       // Other scripts
-      './app/scripts/balancetext.min.js',
       // Main
       './app/scripts/main.js'
     ])

@@ -57,6 +57,7 @@
   <!--<script src="./styles/src/progress/progress.js"></script>-->
   <!--<script src="./styles/src/radio/radio.js"></script>-->
   <!--<script src="./styles/src/slider/slider.js"></script>-->
+  <script src="./styles/src/snackbar/snackbar.js"></script>
   <!--<script src="./styles/src/spinner/spinner.js"></script>-->
   <!--<script src="./styles/src/switch/switch.js"></script>-->
   <!--<script src="./styles/src/tabs/tabs.js"></script>-->
@@ -370,6 +371,14 @@
       <br/>
       <p>Email us at <a href="mailto:contact@mv-hacks.com">contact@mv-hacks.com</a>!</p>
 
+      <br/>
+      <div class="mdl-typography--display-1 section-title">
+        Partners
+      </div>
+
+      <a href="https://www.42.us.org/"><img src="images/42.svg" style="width:100%; max-width: 270px"/></a>
+      <a href="http://hacker.fund/"><img src="images/hackerfund.png" style="width:100%; max-width: 300px"/></a>
+
       <!-- Logos -->
 
 
@@ -377,14 +386,26 @@
 
     <div class="footer">
       <div style="display:inline-block">
-        <button class="social-button mdl-button mdl-js-button mdl-button--icon"><a
-          href="https://github.com/mvhacks"><img src="images/github-box.svg"/></a></button>
-        <button class="social-button mdl-button mdl-js-button mdl-button--icon"><img src="images/twitter-box.svg"/>
+        <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+          <a href="https://github.com/mvhacks">
+            <img src="images/github-box.svg"/>
+          </a>
         </button>
-        <button class="social-button mdl-button mdl-js-button mdl-button--icon"><img src="images/facebook-box.svg"/>
+        <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+          <a href="https://twitter.com/MVHacksCA">
+            <img src="images/twitter-box.svg"/>
+          </a>
         </button>
-        <button class="social-button mdl-button mdl-js-button mdl-button--icon"><a
-          href="mailto:contact@mv-hacks.com"><img src="images/email.svg"/></a></button>
+        <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+          <a href="https://www.facebook.com/mvhacks">
+            <img src="images/facebook-box.svg"/>
+          </a>
+        </button>
+        <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+          <a href="mailto:contact@mv-hacks.com">
+            <img src="images/email.svg"/>
+          </a>
+        </button>
       </div>
 
       <br/>
@@ -393,6 +414,11 @@
         Made with&nbsp;<i class="material-icons material-icons-small">keyboard</i>&nbsp;and&nbsp;<i
         class="material-icons material-icons-small">mouse</i>&nbsp;in Mountain View
       </div>
+    </div>
+
+    <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+      <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
     </div>
 
   </main> <!-- end main content -->

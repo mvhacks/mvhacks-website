@@ -118,6 +118,7 @@ gulp.task('scripts', () =>
       // './app/styles/src/progress/progress.js',
       // './app/styles/src/radio/radio.js',
       // './app/styles/src/slider/slider.js',
+      './app/styles/src/snackbar/snackbar.js',
       // './app/styles/src/spinner/spinner.js',
       // './app/styles/src/switch/switch.js',
       // './app/styles/src/tabs/tabs.js',

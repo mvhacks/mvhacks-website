@@ -91,6 +91,27 @@
 
   balanceText();
 
+  if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+    navigator.serviceWorker.controller.onstatechange = function (e) {
+      if (e.target.state === 'redundant') {
+        var handler = function () {
+          window.location.reload();
+        };
+
+        var snackbarContainer = document.querySelector('#snackbar');
+        var data = {
+          message: 'A new version of this app is available.',
+          timeout: 15000,
+          actionHandler: handler,
+          actionText: 'Refresh'
+        };
+        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+      }
+    };
+  }
+
+
+
   /* var vrView = new VRView.Player('#vrview', {
    image: 'images/pano.jpg',
    is_stereo: false,

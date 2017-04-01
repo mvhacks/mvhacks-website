@@ -86,9 +86,18 @@ div {
   width: calc(100% - 32px);
   max-width: 400px;
   min-height: 0;
-  padding: 16px 4px 8px 4px;
+  padding: 16px 0 0 0;
   box-sizing: content-box;
 }
+
+.sign-up-button {
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
 
 // Scroll down button
 #down-button {
@@ -120,7 +129,7 @@ div {
   margin-top: 8px;
 }
 
-.person img {
+.person > img {
   width: 120px;
   border-radius: 50%;
 }
@@ -167,9 +176,10 @@ div {
 }
 
 .social-button {
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   font-size: 14px;
+  color: #000;
 }
 
 // Responsiveness stuff

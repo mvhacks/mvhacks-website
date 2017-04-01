@@ -100,7 +100,7 @@
 
         var snackbarContainer = document.querySelector('#snackbar');
         var data = {
-          message: 'A new version of this app is available.',
+          message: 'A new version of this site is available.',
           timeout: 15000,
           actionHandler: handler,
           actionText: 'Refresh'

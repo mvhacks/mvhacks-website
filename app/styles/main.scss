@@ -121,8 +121,7 @@ div {
 
 // The Team formatting
 .person {
-  display: inline-block;
-  margin: 28px;
+  min-width: 116px;
 }
 
 .person div {
@@ -130,8 +129,9 @@ div {
 }
 
 .person > img {
-  width: 120px;
+  width: calc(100% - 16px);
   border-radius: 50%;
+  margin: 0 auto;
 }
 
 // TODO: Although this CSS targets the schedule box, changing it doesn't seem to have an effect on anything. OK to remove?

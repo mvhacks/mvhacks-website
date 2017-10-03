@@ -26,10 +26,6 @@ div {
   padding-bottom: 8px;
 }
 
-.balance-text {
-  text-wrap: balanced;
-}
-
 .valign-center {
   display: inline-flex;
   vertical-align: middle;
@@ -122,6 +118,10 @@ div {
 // The Team formatting
 .person {
   min-width: 116px;
+}
+
+.person-ambassador {
+  min-width: 96px;
 }
 
 .person div {

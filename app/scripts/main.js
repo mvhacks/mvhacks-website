@@ -102,18 +102,8 @@
   if (navigator.serviceWorker && navigator.serviceWorker.controller) {
     navigator.serviceWorker.controller.onstatechange = function(e) {
       if (e.target.state === 'redundant') {
-        var handler = function() {
-          window.location.reload();
-        };
-
-        var snackbarContainer = document.querySelector('#snackbar');
-        var data = {
-          message: 'A new version of this site is available.',
-          timeout: 15000,
-          actionHandler: handler,
-          actionText: 'Refresh'
-        };
-        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+        //Reload if site is updated
+        window.location.reload();
       }
     };
   }

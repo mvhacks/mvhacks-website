@@ -50,9 +50,15 @@
   <!-- Color the status bar on mobile devices -->
   <meta name="theme-color" content="#4CAF50">
 
+  <meta http-equiv="refresh" content="120">
+
   <!-- Open all links in new tab -->
   <base target="_blank"/>
 
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
+        type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto+Slab:regular,bold,italic,thin,light,bolditalic,black,medium" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -124,6 +130,21 @@
         <div class="mdl-card mdl-shadow--2dp sign-up-card">
 
           <div style="margin-bottom: 16px; padding: 0 8px">
+            <div class="slab mdl-typography--title" style="margin-bottom:16px;">
+              <b>Coming Up:</b><br/> Dinner @ 7:00<br/>
+            </div>
+
+            <div class="slab mdl-typography--title" style="margin-bottom:16px">
+              <div style="padding-bottom:8px"><b>Time Remaining</b></div>
+              <span style="font-size:30px;font-weight:300;font-family:'Roboto Mono"><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></span>
+            </div>
+
+            <div class="slab mdl-typography--title" style="margin-bottom:12px;font-weight:900">
+              Join <a href="https://slack-mvhacks.herokuapp.com">Slack</a> and <a href="https://mountain-view-hacks.devpost.com/">Devpost</a>!<br/>
+            </div>
+
+            <hr/>
+
 
             <div class="slab mdl-typography--title">
               October 21, 2017<br/>
@@ -157,26 +178,6 @@
 
           </div>
 
-          <div>
-            <form
-              action="https://docs.google.com/forms/d/e/1FAIpQLSdIJI6CmACirYTf_KAd2rz1Mp1r6ECMVt3gPOcaZZqgulrE3w/viewform?usp=sf_link" style="display: inline-block; width: 50%; float: left">
-              <button
-                class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored sign-up-button"
-                type="submit" onclick="fbq('track', 'InitiateCheckout');">
-                Student
-              </button>
-            </form>
-             <form
-              action="https://docs.google.com/forms/d/e/1FAIpQLSes5-ltFkJvreqoZWC4paYpEO-YjGt644hs_Ix0014JTt4QSQ/viewform?usp=sf_link" style="display: inline-block; width: 50%; float: right">
-              <button
-                class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored sign-up-button"
-                type="submit">
-                Mentor
-              </button>
-            </form>
-         </div>
-
-
         </div> <!-- end sign up card -->
 
 
@@ -191,10 +192,6 @@
       </div> <!-- end splash page content -->
 
       <!-- Scroll button -->
-      <button id="down-button"
-              class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-        <i class="material-icons">expand_more</i>
-      </button>
     </div> <!-- end splash page -->
 
     <!-- What Is MVHacks? -->
@@ -226,10 +223,10 @@
             <b>08:15 - 08:45</b> &nbsp;&nbsp;&nbsp; Opening Ceremony <br><br>
             <b>08:45 - 12:30</b> &nbsp;&nbsp;&nbsp; Begin Hacking <br><br>
             <b>12:30 - 01:30</b> &nbsp;&nbsp;&nbsp; Lunch <br><br>
-            <b>06:00 - 07:00</b> &nbsp;&nbsp;&nbsp; Dinner <br><br>
-            <b>07:45 - 08:00</b> &nbsp;&nbsp;&nbsp; Project Submission <br><br>
-            <b>08:00 - 08:30</b> &nbsp;&nbsp;&nbsp; Judging <br><br>
-            <b>08:30 - 09:00</b> &nbsp;&nbsp;&nbsp; Closing ceremony</p>
+            <b>07:00 - 07:30</b> &nbsp;&nbsp;&nbsp; Dinner <br><br>
+            <b>08:00 - 08:00</b> &nbsp;&nbsp;&nbsp; Project Deadline<br><br>
+            <b>08:00 - 08:45</b> &nbsp;&nbsp;&nbsp; Judging <br><br>
+            <b>08:45 - 09:00</b> &nbsp;&nbsp;&nbsp; Closing ceremony</p>
         </div>
 
         <div class="mdl-cell mdl-cell--4-col">
@@ -575,8 +572,6 @@
                                                 style="width:calc(100% - 32px); margin: 8px 16px; max-width: 300px"/></a>
         <a href="https://www.leangap.org"><img src="images/sponsors/leangap.png"
                                                 style="width:calc(100% - 32px); margin: 8px 16px; max-width: 200px"/></a>
-        <a href="https://www.soylent.com"><img src="images/sponsors/soylent.svg"
-                                               style="width:calc(100% - 32px); margin: 8px 16px; max-width: 200px"/></a>
       </div>
 
       <div style="margin-bottom: 64px; margin-top:48px">

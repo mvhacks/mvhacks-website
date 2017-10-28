@@ -56,7 +56,9 @@
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
         type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto+Slab:regular,bold,italic,thin,light,bolditalic,black,medium" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto+Slab:regular,bold,italic,thin,light,bolditalic,black,medium"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -90,19 +92,29 @@
 
   <!-- Facebook Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '118238682224239');
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=118238682224239&ev=PageView&noscript=1"
+                 src="https://www.facebook.com/tr?id=118238682224239&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
 
@@ -225,7 +237,8 @@
         <div class="mdl-cell mdl-cell--4-col">
           <div class="mdl-typography--display-2 section-title">Workshops</div>
           <p style="font-size: 16px; text-align: left;display: inline-block;">
-            <b>Internet of Things (Microsoft)</b><br>Build a cloud-connected IoT device using MakeyMakey, Microbit, and Raspberry Pi<br><br>
+            <b>Internet of Things (Microsoft)</b><br>Build a cloud-connected IoT device using MakeyMakey, Microbit, and
+            Raspberry Pi<br><br>
             <b>Build a Chatbot (Microsoft)</b><br>Build your first chatbot in less than an hour<br><br>
             <b>Intro to Azure (Microsoft)</b><br>Build cloud applications using Microsoft's Azure platform<br><br>
             <b>Intro to iOS/Android Development (LeanGap)</b><br>Learn how to build your first iOS/Android app<br><br>
@@ -552,7 +565,7 @@
       <div>
         <div>
           <a href="https://microsoft.com"><img src="images/sponsors/microsoft.png"
-                                          style="width:calc(100% - 32px); margin-bottom:32px; max-width: 450px"/></a>
+                                               style="width:calc(100% - 32px); margin-bottom:32px; max-width: 450px"/></a>
         </div>
         <a href="https://desmos.com"><img src="images/sponsors/desmos.png"
                                           style="width:calc(100% - 32px); margin: 8px 16px; max-width: 300px"/></a>
@@ -565,7 +578,9 @@
         <a href="https://www.symantec.com"><img src="images/sponsors/symantec.svg"
                                                 style="width:calc(100% - 32px); margin: 8px 16px; max-width: 300px"/></a>
         <a href="https://www.leangap.org"><img src="images/sponsors/leangap.png"
-                                                style="width:calc(100% - 32px); margin: 8px 16px; max-width: 300px"/></a>
+                                               style="width:calc(100% - 32px); margin: 8px 16px; max-width: 300px"/></a>
+        <a href="https://ignitelabs.org/"><img src="images/sponsors/ignite-labs.svg"
+                                               style="width:calc(100% - 32px); margin: 8px 16px; max-width: 300px"/></a>
       </div>
 
       <!--<div style="margin-bottom: 64px; margin-top:48px">
@@ -638,9 +653,9 @@
 </div> <!-- end main layout -->
 
 <script>
-  (function(i, s, o, g, r, a, m) {
+  (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function() {
+    i[r] = i[r] || function () {
       (i[r].q = i[r].q || []).push(arguments);
     }, i[r].l = 1 * new Date();
     a = s.createElement(o),

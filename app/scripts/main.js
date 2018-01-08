@@ -16,8 +16,8 @@
  *  limitations under the License
  *
  */
-/* eslint-env browser, jquery*/
-(function() {
+/* jquery, eslint-env browser*/
+(function () {
   'use strict';
 
   // Check to make sure service workers are supported in the current browser,
@@ -26,12 +26,12 @@
   // http://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features
   var isLocalhost = Boolean(
     window.location.hostname === 'localhost' ||
-      // [::1] is the IPv6 localhost address.
-      window.location.hostname === '[::1]' ||
-      // 127.0.0.1/8 is considered localhost for IPv4.
-      window.location.hostname.match(
-        /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
-      )
+    // [::1] is the IPv6 localhost address.
+    window.location.hostname === '[::1]' ||
+    // 127.0.0.1/8 is considered localhost for IPv4.
+    window.location.hostname.match(
+      /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+    )
   );
 
   if (
@@ -40,9 +40,9 @@
   ) {
     navigator.serviceWorker
       .register('service-worker.js')
-      .then(function(registration) {
+      .then(function (registration) {
         // updatefound is fired if service-worker.js changes.
-        registration.onupdatefound = function() {
+        registration.onupdatefound = function () {
           // updatefound is also fired the very first time the SW is installed,
           // and there's no need to prompt for a reload at that point.
           // So check here to see if the page is already controlled,
@@ -52,7 +52,7 @@
             // https://slightlyoff.github.io/ServiceWorker/spec/service_worker/index.html#service-worker-container-updatefound-event
             var installingWorker = registration.installing;
 
-            installingWorker.onstatechange = function() {
+            installingWorker.onstatechange = function () {
               switch (installingWorker.state) {
                 case 'installed':
                   // At this point, the old content will have been purged and the
@@ -73,7 +73,7 @@
           }
         };
       })
-      .catch(function(e) {
+      .catch(function (e) {
         console.error('Error during service worker registration:', e);
       });
   }
@@ -84,7 +84,7 @@
     dateEnd = new Date(dateEnd);
     dateEnd = dateEnd.getTime();
 
-    if ( isNaN(dateEnd) ) {
+    if (isNaN(dateEnd)) {
       return;
     }
 
@@ -94,40 +94,29 @@
       var dateStart = new Date();
       var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
 
-      if ( timeRemaining >= 0 ) {
-        days    = parseInt(timeRemaining / 86400);
-        timeRemaining   = (timeRemaining % 86400);
-        hours   = parseInt(timeRemaining / 3600);
-        timeRemaining   = (timeRemaining % 3600);
+      if (timeRemaining >= 0) {
+        days = parseInt(timeRemaining / 86400);
+        timeRemaining = (timeRemaining % 86400);
+        hours = parseInt(timeRemaining / 3600);
+        timeRemaining = (timeRemaining % 3600);
         minutes = parseInt(timeRemaining / 60);
-        timeRemaining   = (timeRemaining % 60);
+        timeRemaining = (timeRemaining % 60);
         seconds = parseInt(timeRemaining);
 
         //document.getElementById("days").innerHTML    = parseInt(days, 10);
-        document.getElementById("hours").innerHTML   = ("0" + hours).slice(-2);
-        document.getElementById("minutes").innerHTML = ("0" + minutes).slice(-2);
-        document.getElementById("seconds").innerHTML = ("0" + seconds).slice(-2);
+        document.getElementById('hours').innerHTML = ('0' + hours).slice(-2);
+        document.getElementById('minutes').innerHTML = ('0' + minutes).slice(-2);
+        document.getElementById('seconds').innerHTML = ('0' + seconds).slice(-2);
       } else {
         return;
       }
     }
 
-    function display(days, hours, minutes, seconds) {}
+    function display(days, hours, minutes, seconds) {
+    }
   }
 
   countdown('2017-10-21T20:00:00-07:00');
-
-  // Down button event listener
-  /*$('#down-button').click(function() {
-    $('.mdl-layout__content')
-      .stop()
-      .animate(
-        { scrollTop: $('#info').offset().top },
-        1000,
-        'swing',
-        function() {}
-      );
-  });*/
 
   $('.staggered-grid').masonry({
     // options
@@ -139,7 +128,7 @@
   balanceText();
 
   if (navigator.serviceWorker && navigator.serviceWorker.controller) {
-    navigator.serviceWorker.controller.onstatechange = function(e) {
+    navigator.serviceWorker.controller.onstatechange = function (e) {
       if (e.target.state === 'redundant') {
         //Reload if site is updated
         window.location.reload();

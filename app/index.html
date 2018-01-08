@@ -60,10 +60,9 @@
     href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto+Slab:regular,bold,italic,thin,light,bolditalic,black,medium"
     rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script defer src="https://unpkg.com/masonry-layout@4.1.1/dist/masonry.pkgd.min.js"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.0.0/balancetext.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.2.0/balancetext.min.js"></script>
   <!--<script defer src="http://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>-->
 
   <!-- build:js scripts/main.min.js defer-->
@@ -196,6 +195,20 @@
       </div> <!-- end splash page content -->
 
       <!-- Scroll button -->
+      <button id="down-button"
+              class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored"
+              onclick="{
+        $('.mdl-layout__content')
+        .stop()
+        .animate(
+          {scrollTop: $('#info').offset().top},
+          1000,
+          'swing',
+          function () {}
+          );
+        }">
+        <i class="material-icons">expand_more</i>
+      </button>
     </div> <!-- end splash page -->
 
     <!-- What Is MVHacks? -->

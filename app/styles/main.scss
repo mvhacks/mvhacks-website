@@ -3,242 +3,245 @@
 /* Global Rules */
 
 html, body {
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  margin: 0;
-  padding: 0;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ font-family: Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+   Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+ margin: 0;
+ padding: 0;
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a {
-  color: #25a128;
+ color: #25a128;
 }
 
 div {
-  padding: 0;
-  text-align: center;
+ padding: 0;
+ text-align: center;
 }
 
 .section-title {
-  padding-top: 24px;
-  padding-bottom: 24px;
+ padding-top: 24px;
+ padding-bottom: 24px;
 }
 
 .section-subtitle {
-  padding-bottom: 8px;
+ padding-bottom: 8px;
 }
 
 .valign-center {
-  display: inline-flex;
-  vertical-align: middle;
-  align-items: center;
+ display: inline-flex;
+ vertical-align: middle;
+ align-items: center;
 }
 
 .material-icons-small {
-  font-size: 16px;
+ font-size: 16px;
 }
 
 /* Front Page */
 
 // Background
 .header {
-  background: url(../images/background.jpg) bottom / cover;
-  background-color: #8bc34a;
-  height: 100vh;
+ background: url(../images/firewatchWallpaper.jpg) bottom / cover;
+ background-color: #8bc34a;
+ height: 100vh;
 }
 
 .header > .content {
-  padding-bottom: 200px;
+ padding-bottom: 200px;
 }
 
 #background-image {
-  opacity: 0.5;
-  height: 100%;
-  width: 100%;
-  object-position: center;
-  object-fit: cover;
+ opacity: 0.5;
+ height: 100%;
+ width: 100%;
+ object-position: center;
+ object-fit: cover;
 }
 
 // Logo
 #mvhacks-image {
-  max-height: calc(100vh - 480px);
-  max-width: 100%;
+ max-height: calc(100vh - 515px);
+ max-width: 100%;
 }
 
 // Content wrapper
 .content {
-  position: relative;
-  margin: 0 auto;
-  max-width: 840px;
-  padding: 32px 16px 80px;
+ position: relative;
+ margin: 0 auto;
+ max-width: 840px;
+ padding: 32px 16px 80px;
 }
 
 .slab {
-  font-family: 'Roboto Slab', serif;
-  line-height: 28px;
+ font-family: 'Roboto Slab', serif;
+ line-height: 28px;
 }
 
 // Sign up card
 .sign-up-card {
-  margin: 0 auto;
-  width: calc(100% - 32px);
-  max-width: 400px;
-  min-height: 0;
-  padding: 16px 0 0 0;
-  box-sizing: content-box;
+ margin: 0 auto;
+ width: calc(100% - 32px);
+ max-width: 400px;
+ min-height: 0;
+ padding: 16px 0 0 0;
+ box-sizing: content-box;
 }
 
 .sign-up-button {
-  border-radius: 0;
-  width: 100%;
-  height: auto;
-  padding-top: 8px;
-  padding-bottom: 8px;
+ border-radius: 0;
+ width: 100%;
+ height: auto;
+ padding-top: 8px;
+ padding-bottom: 8px;
 }
 
 
 // Scroll down button
 #down-button {
-  position: absolute;
-  bottom: 48px;
-  right: 64px;
+ position: absolute;
+ bottom: 48px;
+ right: 64px;
+ color: orange;
 }
 
 // FAQ wrapper
 .content-grid {
-  padding-left: 4px;
-  padding-right: 4px;
-  max-width: 1080px;
+ padding-left: 4px;
+ padding-right: 4px;
+ max-width: 1080px;
 }
 
 // More Info background
 .colored-bg {
-  background-color: #4CAF50;
-  color: #fff;
+ background-color:#FE6D40;
+ color: #2D112A;
 }
 
 // The Team formatting
 .person {
-  min-width: 116px;
-  max-width: 140px;
+ min-width: 116px;
+ max-width: 140px;
 }
 
 .person-ambassador {
-  min-width: 96px;
+ min-width: 96px;
 }
 
 .person div {
-  margin-top: 8px;
+ margin-top: 8px;
 }
 
 .person > img {
-  width: calc(100% - 16px);
-  border-radius: 50%;
-  margin: 0 auto;
+ width: calc(100% - 16px);
+ border-radius: 50%;
+ margin: 0 auto;
 }
 
 // TODO: Although this CSS targets the schedule box, changing it doesn't seem to have an effect on anything. OK to remove?
 // Schedule box
 .shadow-margin {
-  margin-bottom: 8px
+ margin-bottom: 8px
 }
 
 // FAQ wrapper
 .grid-sizer {
-  width: 33.3%;
+ width: 33.3%;
 }
 
 // FAQ card
 .grid-item {
-  width: calc(33.3% - 8px);
-  margin: 4px;
+ width: calc(33.3% - 8px);
+ margin: 4px;
 }
 
 // TODO: Confirm that this CSS is actually relevant and targets something
 .grid-item-width2 {
-  width: calc(66.6% - 8px);
+ width: calc(66.6% - 8px);
 }
 
 // FAQ card
 .card {
-  @include shadow-2dp();
-  padding: 24px;
-  min-height: 0;
+ @include shadow-2dp();
+ padding: 24px;
+ min-height: 0;
 }
 
 // FAQ card title
 .card > .section-subtitle {
-  padding-bottom: 12px;
+ padding-bottom: 12px;
 }
 
 .footer {
-  padding: ($padding * 2) $padding;
+ padding: ($padding * 2) $padding;
 
-  color: $footer-color;
-  background-color: $footer-bg-color;
+ color: $footer-color;
+ background-color: $footer-bg-color;
 }
 
 .social-button {
-  width: 32px;
-  height: 32px;
-  font-size: 14px;
-  color: #000;
+ width: 32px;
+ height: 32px;
+ font-size: 14px;
+ color: #000;
 }
 
 // Responsiveness stuff
 @media (max-width: 840px) {
-  .content {
-    padding: 16px 16px 64px;
-  }
+ .content {
+   padding: 16px 16px 64px;
+ }
 
-  .grid-sizer {
-    width: 50%;
-  }
+ .grid-sizer {
+   width: 50%;
+ }
 
-  .grid-item-width2 {
-    width: calc(100% - 8px);
-  }
+ .grid-item-width2 {
+   width: calc(100% - 8px);
+ }
 
-  .grid-item {
-    width: calc(50% - 8px);
-  }
+ .grid-item {
+   width: calc(50% - 8px);
+ }
 }
 
 @media (max-width: 600px) {
-  .content {
-    padding: 16px 16px 32px;
-  }
+ .content {
+   padding: 16px 16px 32px;
+ }
 
-  .content-grid {
-    padding: 4px 4px 32px;
-  }
+ .content-grid {
+   padding: 4px 4px 32px;
+ }
 
-  #down-button {
-    left: 50%;
-    right: auto;
-    margin-left: -28px;
-  }
+ #down-button {
+   left: 50%;
+   right: auto;
+   margin-left: -28px;
+ }
 
-  .grid-sizer {
-    width: 100%;
-  }
+ .grid-sizer {
+   width: 100%;
+ }
 
-  .grid-item {
-    width: calc(100% - 8px);
-  }
+ .grid-item {
+   width: calc(100% - 8px);
+ }
 }
 
 @media (max-height: 600px) {
-  #down-button {
-    display: none;
-  }
+ #down-button {
+   display: none;
+ }
 
-  .header > .content {
-    padding-bottom: 32px;
-  }
+ .header > .content {
+   padding-bottom: 32px;
+ }
 
-  #mvhacks-image {
-    max-height: calc(100vh - 300px);
-    max-width: 100%;
-  }
+ #mvhacks-image {
+   max-height: calc(100vh - 300px);
+   max-width: 100%;
+ }
 }
+
+

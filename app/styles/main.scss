@@ -11,7 +11,7 @@ html, body {
 }
 
 a {
- color: #25a128;
+ color: #FE6D40;
 }
 
 div {
@@ -43,7 +43,7 @@ div {
 // Background
 .header {
  background: url(../images/firewatchWallpaper.jpg) bottom / cover;
- background-color: #8bc34a;
+ background-color: #FE6D40;
  height: 100vh;
 }
 
@@ -174,7 +174,6 @@ div {
 
 .footer {
  padding: ($padding * 2) $padding;
-
  color: $footer-color;
  background-color: $footer-bg-color;
 }
@@ -183,7 +182,7 @@ div {
  width: 32px;
  height: 32px;
  font-size: 14px;
- color: #000;
+ color: #2D112A;
 }
 
 // Responsiveness stuff
@@ -244,4 +243,23 @@ div {
  }
 }
 
+//navigation
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color: #2D112A;
+  padding-left: 12px;
+}
 
+#nav {
+  background-color: #2D112A;
+  text-align: left;
+}
+
+//About Page
+#about-info {
+  padding-top: 2em;
+}
+
+#about-text {
+  color: white;
+}

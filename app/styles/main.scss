@@ -7,7 +7,7 @@ html, body {
    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
  margin: 0;
  padding: 0;
- -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ -webkit-tap-highlight-color: #2D112A;
 }
 
 a {
@@ -140,8 +140,7 @@ div {
 
 // TODO: Although this CSS targets the schedule box, changing it doesn't seem to have an effect on anything. OK to remove?
 // Schedule box
-.shadow-margin {
- margin-bottom: 8px
+#schedule-box {
 }
 
 // FAQ wrapper
@@ -262,4 +261,9 @@ div {
 
 #about-text {
   color: white;
+}
+
+//Sponsors
+#sponsors-page{
+  background-color: #FE6D40;
 }

@@ -8,6 +8,7 @@ html, body {
  margin: 0;
  padding: 0;
  -webkit-tap-highlight-color: #2D112A;
+ color: #2D112A;
 }
 
 a {
@@ -152,6 +153,8 @@ div {
 .grid-item {
  width: calc(33.3% - 8px);
  margin: 4px;
+ background-color: #FE6D40;
+ color: #2D112A;
 }
 
 // TODO: Confirm that this CSS is actually relevant and targets something
@@ -263,7 +266,7 @@ div {
   color: white;
 }
 
-//Sponsors
-#sponsors-page{
-  background-color: #FE6D40;
+//Buttons
+#button {
+  color: #FE6D40;
 }

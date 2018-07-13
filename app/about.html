@@ -3,170 +3,170 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="MVHacks - 12 hours, 120 hackers @ HackerDojo">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MVHacks</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="MVHacks - 12 hours, 120 hackers @ HackerDojo">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MVHacks</title>
 
-    <link rel="icon" href="./favicon2.png?v=2" />
-    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="icon" href="./favicon2.png?v=2" />
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
-    <!-- Color the status bar on mobile devices -->
-    <meta name="theme-color" content="#FE6D40">
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#FE6D40">
 
-    <!-- Open all links in new tab -->
-    <base target="_blank" />
+  <!-- Open all links in new tab -->
+  <base target="_blank" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
-        type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto+Slab:regular,bold,italic,thin,light,bolditalic,black,medium"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.2.0/balancetext.min.js"></script>
-    <!--<script defer src="http://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
+    type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono|Roboto+Slab:regular,bold,italic,thin,light,bolditalic,black,medium"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.1/masonry.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.2.0/balancetext.min.js"></script>
+  <!--<script defer src="http://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>-->
 
-    <!-- build:js scripts/main.min.js defer-->
-    <script src="./styles/src/mdlComponentHandler.js"></script>
-    <script src="./styles/src/button/button.js"></script>
-    <!--<script src="./styles/src/checkbox/checkbox.js"></script>-->
-    <!--<script src="./styles/src/icon-toggle/icon-toggle.js"></script>-->
-    <!--<script src="./styles/src/menu/menu.js"></script>-->
-    <!--<script src="./styles/src/progress/progress.js"></script>-->
-    <!--<script src="./styles/src/radio/radio.js"></script>-->
-    <!--<script src="./styles/src/slider/slider.js"></script>-->
-    <script src="./styles/src/snackbar/snackbar.js"></script>
-    <!--<script src="./styles/src/spinner/spinner.js"></script>-->
-    <!--<script src="./styles/src/switch/switch.js"></script>-->
-    <!--<script src="./styles/src/tabs/tabs.js"></script>-->
-    <script src="./styles/src/textfield/textfield.js"></script>
-    <!--<script src="./styles/src/tooltip/tooltip.js"></script>-->
-    <script src="./styles/src/layout/layout.js"></script>
-    <!--<script src="./styles/src/data-table/data-table.js"></script>-->
-    <script src="./styles/src/ripple/ripple.js"></script>
+  <!-- build:js scripts/main.min.js defer-->
+  <script src="./styles/src/mdlComponentHandler.js"></script>
+  <script src="./styles/src/button/button.js"></script>
+  <!--<script src="./styles/src/checkbox/checkbox.js"></script>-->
+  <!--<script src="./styles/src/icon-toggle/icon-toggle.js"></script>-->
+  <!--<script src="./styles/src/menu/menu.js"></script>-->
+  <!--<script src="./styles/src/progress/progress.js"></script>-->
+  <!--<script src="./styles/src/radio/radio.js"></script>-->
+  <!--<script src="./styles/src/slider/slider.js"></script>-->
+  <script src="./styles/src/snackbar/snackbar.js"></script>
+  <!--<script src="./styles/src/spinner/spinner.js"></script>-->
+  <!--<script src="./styles/src/switch/switch.js"></script>-->
+  <!--<script src="./styles/src/tabs/tabs.js"></script>-->
+  <script src="./styles/src/textfield/textfield.js"></script>
+  <!--<script src="./styles/src/tooltip/tooltip.js"></script>-->
+  <script src="./styles/src/layout/layout.js"></script>
+  <!--<script src="./styles/src/data-table/data-table.js"></script>-->
+  <script src="./styles/src/ripple/ripple.js"></script>
 
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
 
-    <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css">
 
-    <!-- Facebook Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '118238682224239');
-        fbq('track', 'PageView');
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=118238682224239&ev=PageView&noscript=1"
-        />
-    </noscript>
-    <!-- End Facebook Pixel Code -->
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '118238682224239');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=118238682224239&ev=PageView&noscript=1"
+    />
+  </noscript>
+  <!-- End Facebook Pixel Code -->
 
 </head>
 
 <!-- What Is MVHacks? -->
-<div class="white">
-        <div class="content" id="info">
-  
-          <!-- Title -->
-          <div class="mdl-typography--display-2 section-title">What is Mountain View Hacks?</div>
-  
-          <!--<div id="vrview"></div>
-          <br/>-->
-  
-          <!-- Body -->
-          <div class="mdl-typography--subhead content-padding balance-text">
-            MVHacks is a high school hackathon hosted at Hacker Dojo and organized by Mountain View High School students.
-            Both first time and more experienced programmers will be gathered together to turn their dreams into
-            realities.
-          </div>
-        </div> <!-- end content -->
-      </div> <!-- end What Is MVHacks -->
-  
-      <!-- Photos -->
-      <div>
-        <img src="images/event/mrnguyen.jpg"
-             style="margin-bottom:32px; max-width: 500px; max-height:175px;"/>
-        <img src="images/event/hackers.jpg"
-             style="margin-bottom:32px; max-width: 500px; max-height:175px;"/>
-        <img src="images/event/awards.jpg"
-             style="margin-bottom:32px; max-width: 500px; max-height:175px;"/>
-        <img src="images/event/presentation.jpg"
-             style="margin-bottom:32px; max-width: 500px; max-height:175px;"/>
-        <img src="images/event/food.jpg"
-             style="margin-bottom:32px; max-width: 500px; max-height:175px;"/>
-        <div class="slab mdl-typography--body-1" style="margin-bottom: 32px;vertical-align: middle">
-          For more photos, see <a href="http://club.mvhs.io">club.mvhs.io</a>
-        </div>
+  <div class="white">
+    <div class="content" id="info">
+
+      <!-- Title -->
+      <div class="mdl-typography--display-2 section-title">What is Mountain View Hacks?</div>
+
+      <!--<div id="vrview"></div>
+            <br/>-->
+
+      <!-- Body -->
+      <div class="mdl-typography--subhead content-padding balance-text">
+        MVHacks is a high school hackathon hosted at Hacker Dojo and organized by Mountain View High School students. Both first
+        time and more experienced programmers will be gathered together to turn their dreams into realities.
+      </div>
+    </div>
+    <!-- end content -->
+  </div>
+<!-- end What Is MVHacks -->
+
+<!-- Photos -->
+<div>
+  <img src="images/event/mrnguyen.jpg" style="margin-bottom:32px; max-width: 500px; max-height:175px;" />
+  <img src="images/event/hackers.jpg" style="margin-bottom:32px; max-width: 500px; max-height:175px;" />
+  <img src="images/event/awards.jpg" style="margin-bottom:32px; max-width: 500px; max-height:175px;" />
+  <img src="images/event/presentation.jpg" style="margin-bottom:32px; max-width: 500px; max-height:175px;" />
+  <img src="images/event/food.jpg" style="margin-bottom:32px; max-width: 500px; max-height:175px;" />
+  <div class="slab mdl-typography--body-1" style="margin-bottom: 32px;vertical-align: middle">
+    For more photos, see
+    <a href="http://club.mvhs.io">club.mvhs.io</a>
+  </div>
+</div>
+<!-- end photos-->
+
+<!-- Team List -->
+<div class="colored-bg content-padding mdl-shadow--2dp shadow-margin">
+  <div class="content mdl-typography--subhead" style="max-width: 960px;">
+
+    <!-- Title -->
+    <div class="mdl-typography--display-2 section-title" style="margin-bottom: 16px">
+      The Team
+    </div>
+
+    <div class="mdl-grid" style="padding:0; justify-content: center">
+
+      <div class="person mdl-cell mdl-cell--2-col">
+        <img src="images/profiles/marc.png" />
+        <div>Marc Bacvanski</div>
+        <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+          <a href="https://github.com/mbacvanski">
+            <img src="images/social/github-box.svg" />
+          </a>
+        </button>
+        <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+          <a href="https://www.linkedin.com/in/mbacvanski/">
+            <img src="images/social/linkedin-box.svg" />
+          </a>
+        </button>
       </div>
 
-        <!-- Team List -->
-   <div class="colored-bg content-padding mdl-shadow--2dp shadow-margin">
-        <div class="content mdl-typography--subhead" style="max-width: 960px;">
-   
-          <!-- Title -->
-          <div class="mdl-typography--display-2 section-title" style="margin-bottom: 16px">
-            The Team
-          </div>
-   
-          <div class="mdl-grid" style="padding:0; justify-content: center">
-   
-            <div class="person mdl-cell mdl-cell--2-col">
-              <img src="images/profiles/marc.png"/>
-              <div>Marc Bacvanski</div>
-              <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-                <a href="https://github.com/mbacvanski">
-                  <img src="images/social/github-box.svg"/>
-                </a>
-              </button>
-              <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-                <a href="https://www.linkedin.com/in/mbacvanski/">
-                  <img src="images/social/linkedin-box.svg"/>
-                </a>
-              </button>
-            </div>
-   
-            <div class="person mdl-cell mdl-cell--2-col">
-              <img src="images/profiles/stuart.jpg"/>
-              <div>Stuart Trappe</div>
-              <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-                <a href="https://github.com/GentlemanShark">
-                  <img src="images/social/github-box.svg"/>
-                </a>
-              </button>
-              <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-                <a href="https://www.linkedin.com/in/stuart-trappe/">
-                  <img src="images/social/linkedin-box.svg"/>
-                </a>
-              </button>
-            </div>
-          </div>
-          <br>
-          <div class="mdl-typography--display-2 section-title" style="margin-bottom: 16px">
-            Campus Ambassadors
-          </div>
-          <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;primary"
+      <div class="person mdl-cell mdl-cell--2-col">
+        <img src="images/profiles/stuart.jpg" />
+        <div>Stuart Trappe</div>
+        <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+          <a href="https://github.com/GentlemanShark">
+            <img src="images/social/github-box.svg" />
+          </a>
+        </button>
+        <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+          <a href="https://www.linkedin.com/in/stuart-trappe/">
+            <img src="images/social/linkedin-box.svg" />
+          </a>
+        </button>
+      </div>
+    </div>
+    <br>
+    <div class="mdl-typography--display-2 section-title" style="margin-bottom: 16px">
+      Campus Ambassadors
+    </div>
+    <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;primary"
                   onclick="location.href='mailto:contact@mv-hacks.com';" style="background-color: #fff; color: #4CAF50; margin-top: 24px">
             Become a campus ambassador
           </button>-->
-        </div> <!-- end content -->
-      </div> <!-- end team list -->
+  </div>
+  <!-- end content -->
+</div>
+<!-- end team list -->

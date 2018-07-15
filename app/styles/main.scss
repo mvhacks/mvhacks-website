@@ -43,12 +43,12 @@ div {
 
 // Background
 .header {
- background: url(../images/firewatchWallpaper.jpg) bottom / cover;
+ background: url(../images/background2.jpg) bottom / cover;
  background-color: #FE6D40;
  height: 100vh;
 }
 
-.header > .content {
+.content {
  padding-bottom: 200px;
 }
 
@@ -139,11 +139,6 @@ div {
  margin: 0 auto;
 }
 
-// TODO: Although this CSS targets the schedule box, changing it doesn't seem to have an effect on anything. OK to remove?
-// Schedule box
-#schedule-box {
-}
-
 // FAQ wrapper
 .grid-sizer {
  width: 33.3%;
@@ -153,8 +148,8 @@ div {
 .grid-item {
  width: calc(33.3% - 8px);
  margin: 4px;
- background-color: #FE6D40;
- color: #2D112A;
+ background-color: #2D112A;
+ color: #FE6D40;
 }
 
 // TODO: Confirm that this CSS is actually relevant and targets something
@@ -248,7 +243,7 @@ div {
 //navigation
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
-  color: #2D112A;
+  color: white;
   padding-left: 12px;
 }
 

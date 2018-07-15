@@ -12,7 +12,7 @@ html, body {
 }
 
 a {
- color: #FE6D40;
+ color: #EF4339;
 }
 
 div {
@@ -44,7 +44,7 @@ div {
 // Background
 .header {
  background: url(../images/background2.jpg) bottom / cover;
- background-color: #FE6D40;
+ background-color: #EF4339;
  height: 100vh;
 }
 
@@ -115,7 +115,7 @@ div {
 
 // More Info background
 .colored-bg {
- background-color:#FE6D40;
+ background-color:#EF4339;
  color: #2D112A;
 }
 
@@ -148,8 +148,8 @@ div {
 .grid-item {
  width: calc(33.3% - 8px);
  margin: 4px;
- background-color: #2D112A;
- color: #FE6D40;
+ background-color: #EF4339;
+ color: #2D112A;
 }
 
 // TODO: Confirm that this CSS is actually relevant and targets something
@@ -263,5 +263,5 @@ div {
 
 //Buttons
 #button {
-  color: #FE6D40;
+  color: #EF4339;
 }

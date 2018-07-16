@@ -62,7 +62,7 @@ div {
 
 // Logo
 #mvhacks-image {
- max-height: calc(100vh - 515px);
+ max-height: calc(100vh - 400px);
  max-width: 100%;
 }
 
@@ -264,4 +264,77 @@ div {
 //Buttons
 #button {
   color: #EF4339;
+}
+
+#to-top {
+  right: 30px;
+  bottom: 12px;
+  position: fixed;
+  color: #EF4339;
+  background-color:white;
+  width: 3.5%;
+  height: 7%;
+}
+
+//Slideshow
+* {box-sizing: border-box}
+
+.slideshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  display: none;
+}
+
+#slides-forward {
+  right: 25%;
+}
+
+#slides-backward {
+  left: 25%;
+}
+
+#slides-forward, #slides-backward {
+  position: absolute;
+  top: 157%;
+  margin-top: -22px;
+  padding: 16px;
+  transition: 0.6s ease;
+  color: #2D112A;
+  background-color: #EF4339;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #EF4339;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #530030;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0} 
+  to {opacity: 1}
 }

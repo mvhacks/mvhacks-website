@@ -136,7 +136,7 @@
     <main class="mdl-layout__content">
 
       <!-- Splash page -->
-      <div class="header mdl-shadow--4dp" style="position:relative">
+      <div class="header mdl-shadow--4dp" style="position:relative" id='top'>
         <div class="content" style="padding-top: 0;">
 
           <!-- Logo -->
@@ -145,28 +145,18 @@
               <img src="images/mvhacks2.svg" id="mvhacks-image">
             </div>
           </div>
-          <!--Don't judge I needed to use <br/>-->
-          <br>
-          <br>
-          <br>
           <!-- Sign up card -->
           <div class="mdl-card mdl-shadow--2dp sign-up-card" style='color:#2D112A;'>
-
             <div style="margin-bottom: 16px; padding: 0 8px">
               <div class="slab mdl-typography--title" style="margin-bottom:8px;">
                 <b>MV Hacks 2018</b>
-              </div>
-
-              <div class="slab mdl-typography--title" style="margin-bottom:12px;font-weight:500">
-                <a href="https://mountain-view-hacks.devpost.com/" target='_blank'>Devpost</a> Submissions
-                <br/>
               </div>
 
               <hr/>
 
 
               <div class="slab mdl-typography--title">
-                October 27, 2017
+                October 27, 2018
                 <br/>
               </div>
 
@@ -206,424 +196,485 @@
           <!-- end sign up card -->
 
 
-          <a href="mentorSignUp.html" target='_blank'>
+          <a href="" target='_blank'>
             <button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;accent" style="margin-top:32px; background-color:#EF4339; color:#2D112A;">
               Mentor Sign-up
             </button>
           </a>
         </div>
+        <a href='#top'>
+          <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id='to-top'>
+            <i class='material-icons'>arrow_upward</i>
+          </button>
+        </a>
         <!-- end splash page content -->
 
 
         <!-- What Is MVHacks? -->
-        <div style='background-color: #2D112A; color: #EF4339; height: 68%;'>
-          <div class="white">
-            <div class="content" id="event-info">
-              <!-- Title -->
-              <div class="mdl-typography--display-2 section-title">What is Mountain View Hacks?</div>
+        <div style='background-color: #2D112A; color: #EF4339;'>
+          <div class="content" id="event-info">
+            <!-- Title -->
+            <div class="mdl-typography--display-2 section-title">What is Mountain View Hacks?</div>
+            <!-- Body -->
+            <div class="mdl-typography--subhead content-padding balance-text">
+              MVHacks is a high school hackathon hosted at Hacker Dojo and organized by Mountain View High School students. Both first
+              time and more experienced programmers will be gathered together to turn their dreams into realities.
+            </div>
+          </div>
+          <!-- end content -->
+          <!-- end What Is MVHacks -->
 
-              <!--<div id="vrview"></div>
-            <br/>-->
+          <!-- Slideshow -->
+            <div class='slideshow'>
+              <div class='slides fade'>
+                <img src="images/event/mrnguyen.jpg" style='width: 40%; padding-bottom: 32px;'>
+              </div>
+              <div class='slides fade'>
+                <img src="images/event/hackers.jpg" style='width: 40%; padding-bottom: 32px;'>
+              </div>
+              <div class='slides fade'>
+                <img src="images/event/awards.jpg" style='width: 40%; padding-bottom: 32px;'>
+              </div>
+              <div class='slides fade'>
+                <img src="images/event/presentation.jpg" style='width: 30%; padding-bottom: 32px;'>
+              </div>
+              <div class='slides fade'>
+                <img src="images/event/food.jpg" style='width: 20%; padding-bottom: 32px;'>
+              </div>
+              <!-- Dots -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+              </div>
+              <div class="slab mdl-typography--body-1" style="margin-bottom: 32px; margin-top: 32px; vertical-align: middle">
+                For more photos, see
+                <a href="http://club.mvhs.io" target='_blank'>club.mvhs.io</a>
+              </div>
+              <br>
+            </div>
+            <!-- Buttons -->
+            <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" onclick="plusSlides(-1)" id='slides-backward'>
+              <i class='material-icons'>arrow_back</i>
+            </button>
+            <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" onclick="plusSlides(1)" id='slides-forward'>
+              <i class='material-icons'>arrow_forward</i>
+            </button>
+            <!-- End slideshow -->
+          </div>
 
-              <!-- Body -->
-              <div class="mdl-typography--subhead content-padding balance-text">
-                MVHacks is a high school hackathon hosted at Hacker Dojo and organized by Mountain View High School students. Both first
-                time and more experienced programmers will be gathered together to turn their dreams into realities.
+          <!-- Slideshow code -->
+          <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("slides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) { slideIndex = 1 }
+              if (n < 1) { slideIndex = slides.length }
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex - 1].style.display = "block";
+              dots[slideIndex - 1].className += " active";
+            }
+
+          </script>
+          <!-- End slideshow code -->
+
+          <!-- Schedule -->
+          <div class=" colored-bg content-padding mdl-shadow--2dp shadow-margin" style='background-color: #EF4339; color: #2D112A;'>
+            <div class="content mdl-grid" style="max-width: 1200px">
+              <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-typography--display-2 section-title">Schedule</div>
+                <p style="font-size: 16px; text-align: left;display: inline-block;">
+                  <b>07:30 - 08:15</b> &nbsp;&nbsp;&nbsp; Check In
+                  <br>
+                  <br>
+                  <b>08:15 - 08:45</b> &nbsp;&nbsp;&nbsp; Opening Ceremony
+                  <br>
+                  <br>
+                  <b>08:45 - 12:30</b> &nbsp;&nbsp;&nbsp; Begin Hacking
+                  <br>
+                  <br>
+                  <b>12:30 - 01:30</b> &nbsp;&nbsp;&nbsp; Lunch
+                  <br>
+                  <br>
+                  <b>07:00 - 07:30</b> &nbsp;&nbsp;&nbsp; Dinner
+                  <br>
+                  <br>
+                  <b>08:00 - 08:00</b> &nbsp;&nbsp;&nbsp; Project Deadline
+                  <br>
+                  <br>
+                  <b>08:00 - 08:45</b> &nbsp;&nbsp;&nbsp; Judging
+                  <br>
+                  <br>
+                  <b>08:45 - 09:00</b> &nbsp;&nbsp;&nbsp; Closing ceremony</p>
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-typography--display-2 section-title">Workshops</div>
+                <p style="font-size: 16px; text-align: left;display: inline-block;">
+                  <b>Internet of Things (Microsoft)</b>
+                  <br>Build a cloud-connected IoT device using MakeyMakey, Microbit, and Raspberry Pi
+                  <br>
+                  <br>
+                  <b>Build a Chatbot (Microsoft)</b>
+                  <br>Build your first chatbot in less than an hour
+                  <br>
+                  <br>
+                  <b>Intro to Azure (Microsoft)</b>
+                  <br>Build cloud applications using Microsoft's Azure platform
+                  <br>
+                  <br>
+                  <b>Intro to iOS/Android Development (LeanGap)</b>
+                  <br>Learn how to build your first iOS/Android app
+                  <br>
+                  <br>
+                  <b>Intro to Web Development (LeanGap)</b>
+                  <br>Learn how to build your first web app
+              </div>
+
+              <div class="mdl-cell mdl-cell--4-col">
+                <div class="mdl-typography--display-2 section-title">Prizes</div>
+                <p style="font-size: 14px; line-height:18px; text-align: left;display: inline-block;">
+                  <b>First Place</b>
+                  <br>Apple TVs (4th Generation)
+                  <br>$3000 LeanGap Scholarships
+                  <br>
+                  <br>
+                  <b>Second Place</b>
+                  <br>Amazon Echo Dots (2nd Generation)
+                  <br>
+                  <br>
+                  <b>Third Place</b>
+                  <br>Intel Compute Sticks
+                  <br>
+                  <br>
+                  <b>Best Beginner Hack</b>
+                  <br>Raspberry Pi Zero W Kits
+                  <br>
+                  <br>
+                  <b>Most Creative Hack</b>
+                  <br>HYPE Bluetooth Speakers
+                  <br>
+                  <br>
+                  <b>Best UI/UX</b>
+                  <br>$25 Amazon Gift Cards
+                  <br>
+                  <br>
+                  <b>Best Use of Microsoft Tech</b>
+                  <br>Crazyflie 2.0 Drones
+                  <br>
+                  <br>
+                  <b>Best Hack on .tech Platform</b>
+                  <br>$200 Amazon Voucher
+                  <br>
+                  <br>
+                  <b>CMU Mentors' Choice</b>
+                  <br>CMU Silicon Valley Campus Tour
               </div>
             </div>
             <!-- end content -->
           </div>
-          <!-- end What Is MVHacks -->
+          <!-- end schedule -->
 
-          <!-- Photos -->
-          <div style='background-color: #2D112A;'>
-            <img src="images/event/mrnguyen.jpg" style="max-width: 500px; max-height:175px;" />
-            <img src="images/event/hackers.jpg" style="max-width: 500px; max-height:175px;" />
-            <img src="images/event/awards.jpg" style=" max-width: 500px; max-height:175px;" />
-            <img src="images/event/presentation.jpg" style="max-width: 500px; max-height:175px;" />
-            <img src="images/event/food.jpg" style="max-width: 500px; max-height:175px;" />
-            <div class="slab mdl-typography--body-1" style="margin-bottom: 32px; margin-top: 32px; vertical-align: middle">
-              For more photos, see
-              <a href="http://club.mvhs.io" target='_blank'>club.mvhs.io</a>
-            </div>
-          </div>
-          <!-- end photos-->
-        <!-- Schedule -->
-        <div class=" colored-bg content-padding mdl-shadow--2dp shadow-margin" style='background-color: #EF4339; color: #2D112A;'>
-          <div class="content mdl-grid" style="max-width: 1200px">
-            <div class="mdl-cell mdl-cell--4-col">
-              <div class="mdl-typography--display-2 section-title">Schedule</div>
-              <p style="font-size: 16px; text-align: left;display: inline-block;">
-                <b>07:30 - 08:15</b> &nbsp;&nbsp;&nbsp; Check In
-                <br>
-                <br>
-                <b>08:15 - 08:45</b> &nbsp;&nbsp;&nbsp; Opening Ceremony
-                <br>
-                <br>
-                <b>08:45 - 12:30</b> &nbsp;&nbsp;&nbsp; Begin Hacking
-                <br>
-                <br>
-                <b>12:30 - 01:30</b> &nbsp;&nbsp;&nbsp; Lunch
-                <br>
-                <br>
-                <b>07:00 - 07:30</b> &nbsp;&nbsp;&nbsp; Dinner
-                <br>
-                <br>
-                <b>08:00 - 08:00</b> &nbsp;&nbsp;&nbsp; Project Deadline
-                <br>
-                <br>
-                <b>08:00 - 08:45</b> &nbsp;&nbsp;&nbsp; Judging
-                <br>
-                <br>
-                <b>08:45 - 09:00</b> &nbsp;&nbsp;&nbsp; Closing ceremony</p>
-            </div>
+          <!-- FAQ -->
+          <div style='background-color:#2D112A; color:#EF4339;'>
+            <div class="content content-grid">
 
-            <div class="mdl-cell mdl-cell--4-col">
-              <div class="mdl-typography--display-2 section-title">Workshops</div>
-              <p style="font-size: 16px; text-align: left;display: inline-block;">
-                <b>Internet of Things (Microsoft)</b>
-                <br>Build a cloud-connected IoT device using MakeyMakey, Microbit, and Raspberry Pi
-                <br>
-                <br>
-                <b>Build a Chatbot (Microsoft)</b>
-                <br>Build your first chatbot in less than an hour
-                <br>
-                <br>
-                <b>Intro to Azure (Microsoft)</b>
-                <br>Build cloud applications using Microsoft's Azure platform
-                <br>
-                <br>
-                <b>Intro to iOS/Android Development (LeanGap)</b>
-                <br>Learn how to build your first iOS/Android app
-                <br>
-                <br>
-                <b>Intro to Web Development (LeanGap)</b>
-                <br>Learn how to build your first web app
-            </div>
-
-            <div class="mdl-cell mdl-cell--4-col">
-              <div class="mdl-typography--display-2 section-title">Prizes</div>
-              <p style="font-size: 14px; line-height:18px; text-align: left;display: inline-block;">
-                <b>First Place</b>
-                <br>Apple TVs (4th Generation)
-                <br>$3000 LeanGap Scholarships
-                <br>
-                <br>
-                <b>Second Place</b>
-                <br>Amazon Echo Dots (2nd Generation)
-                <br>
-                <br>
-                <b>Third Place</b>
-                <br>Intel Compute Sticks
-                <br>
-                <br>
-                <b>Best Beginner Hack</b>
-                <br>Raspberry Pi Zero W Kits
-                <br>
-                <br>
-                <b>Most Creative Hack</b>
-                <br>HYPE Bluetooth Speakers
-                <br>
-                <br>
-                <b>Best UI/UX</b>
-                <br>$25 Amazon Gift Cards
-                <br>
-                <br>
-                <b>Best Use of Microsoft Tech</b>
-                <br>Crazyflie 2.0 Drones
-                <br>
-                <br>
-                <b>Best Hack on .tech Platform</b>
-                <br>$200 Amazon Voucher
-                <br>
-                <br>
-                <b>CMU Mentors' Choice</b>
-                <br>CMU Silicon Valley Campus Tour
-            </div>
-          </div>
-          <!-- end content -->
-        </div>
-        <!-- end schedule -->
-
-        <!-- FAQ -->
-        <div style='background-color:#2D112A; color:#EF4339;'>
-          <div class="content content-grid">
-
-            <!-- Title -->
-            <div class="mdl-typography--display-2 section-title" id='faq'>
-              FAQ
-            </div>
-
-            <!-- Content grid -->
-            <div class="staggered-grid">
-              <div class="grid-sizer"></div>
-
-              <!-- Card -->
-              <div class="mdl-card card grid-item">
-
-                <!-- Title -->
-                <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-                  What is a hackathon?
-                </div>
-
-                <!-- Body -->
-                <div class="mdl-typography--body-1 mdl-typography--text-left">
-                  A hackathon is a competitive educational event in which students come together to develop an idea for a project into a real
-                  product. MVHacks will provide hackers with educational resources, including seminars and mentors, and an
-                  environment that will enable their success.
-                </div>
+              <!-- Title -->
+              <div class="mdl-typography--display-2 section-title" id='faq'>
+                FAQ
               </div>
 
-              <!-- Card -->
-              <div class="mdl-card card grid-item">
+              <!-- Content grid -->
+              <div class="staggered-grid">
+                <div class="grid-sizer"></div>
 
-                <!-- Title -->
-                <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-                  How much does it cost?
+                <!-- Card -->
+                <div class="mdl-card card grid-item">
+
+                  <!-- Title -->
+                  <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+                    What is a hackathon?
+                  </div>
+
+                  <!-- Body -->
+                  <div class="mdl-typography--body-1 mdl-typography--text-left">
+                    A hackathon is a competitive educational event in which students come together to develop an idea for a project into a real
+                    product. MVHacks will provide hackers with educational resources, including seminars and mentors, and
+                    an environment that will enable their success.
+                  </div>
                 </div>
 
-                <!-- Body -->
-                <div class="mdl-typography--body-1 mdl-typography--text-left">
-                  It is completely free! All food, swag, and prizes are provided at no charge.
-                </div>
-              </div>
+                <!-- Card -->
+                <div class="mdl-card card grid-item">
 
-              <div class="mdl-card card grid-item">
+                  <!-- Title -->
+                  <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+                    How much does it cost?
+                  </div>
 
-                <!-- Title -->
-                <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-                  Do I need programming experience?
-                </div>
-
-                <!-- Body -->
-                <div class="mdl-typography--body-1 mdl-typography--text-left">
-                  No &mdash; this is a fantastic learning opportunity! Hackers can expect to be able to attend educational workshops run by
-                  industry professionals in addition to experienced adult mentors to help them learn and succeed.
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="mdl-card card grid-item">
-
-                <!-- Title -->
-                <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-                  Who can attend?
+                  <!-- Body -->
+                  <div class="mdl-typography--body-1 mdl-typography--text-left">
+                    It is completely free! All food, swag, and prizes are provided at no charge.
+                  </div>
                 </div>
 
-                <!-- Body -->
-                <div class="mdl-typography--body-1 mdl-typography--text-left">
-                  All high school students are eligible to attend MVHacks as hackers. Interested in attending but not a high school student?
-                  Consider signing up to be a mentor.
+                <div class="mdl-card card grid-item">
+
+                  <!-- Title -->
+                  <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+                    Do I need programming experience?
+                  </div>
+
+                  <!-- Body -->
+                  <div class="mdl-typography--body-1 mdl-typography--text-left">
+                    No &mdash; this is a fantastic learning opportunity! Hackers can expect to be able to attend educational workshops run by
+                    industry professionals in addition to experienced adult mentors to help them learn and succeed.
+                  </div>
                 </div>
-              </div>
 
-              <!-- Card -->
-              <div class="mdl-card card grid-item">
+                <!-- Card -->
+                <div class="mdl-card card grid-item">
 
-                <!-- Title -->
-                <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-                  What do I need?
+                  <!-- Title -->
+                  <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+                    Who can attend?
+                  </div>
+
+                  <!-- Body -->
+                  <div class="mdl-typography--body-1 mdl-typography--text-left">
+                    All high school students are eligible to attend MVHacks as hackers. Interested in attending but not a high school student?
+                    Consider signing up to be a mentor.
+                  </div>
                 </div>
 
-                <!-- Body -->
-                <div class="mdl-typography--body-1 mdl-typography--text-left">
-                  <!--Before the event, make sure to have your parent or legal guardian sign the online <a href="https://app.hellosign.com/s/bee529ee">waiver</a> & <a href="https://app.hellosign.com/s/c02ed457">photo release form</a>.
+                <!-- Card -->
+                <div class="mdl-card card grid-item">
+
+                  <!-- Title -->
+                  <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+                    What do I need?
+                  </div>
+
+                  <!-- Body -->
+                  <div class="mdl-typography--body-1 mdl-typography--text-left">
+                    <!--Before the event, make sure to have your parent or legal guardian sign the online <a href="https://app.hellosign.com/s/bee529ee">waiver</a> & <a href="https://app.hellosign.com/s/c02ed457">photo release form</a>.
                   <br/><br/>-->
-                  For the event, all you need is your school ID, laptop, charger, and a desire to hack!
+                    For the event, all you need is your school ID, laptop, charger, and a desire to hack!
+                  </div>
                 </div>
+
+                <!-- Card -->
+                <div class="mdl-card card grid-item">
+
+                  <!-- Title -->
+                  <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+                    Do I need a team?
+                  </div>
+
+                  <!-- Body -->
+                  <div class="mdl-typography--body-1 mdl-typography--text-left">
+                    Teams of up to 4 are allowed. You may work as an individual, but we recommend collaborating. There will be a team mixer at
+                    the start of the hackathon.
+                  </div>
+                </div>
+
+                <!-- Card -->
+                <div class="mdl-card card grid-item">
+
+                  <!-- Title -->
+                  <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+                    What are the rules?
+                  </div>
+
+                  <!-- Body -->
+                  <div class="mdl-typography--body-1 mdl-typography--text-left">
+                    Be nice, respectful, and have fun! Hackers are expected to behave appropriately and safely at all times.
+                  </div>
+                </div>
+
+                <!-- Card -->
+                <div class="mdl-card card grid-item">
+
+                  <!-- Title -->
+                  <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
+                    I have other questions!
+                  </div>
+
+                  <!-- Body -->
+                  <div class="mdl-typography--body-1 mdl-typography--text-left">
+                    Contact us through our Facebook, Twitter, or email (
+                    <a href="mailto:contact@mv-hacks.com" style='color: #2D112A;'>contact@mv-hacks.com</a>).
+                  </div>
+                </div>
+                <!-- end card -->
               </div>
-
-              <!-- Card -->
-              <div class="mdl-card card grid-item">
-
-                <!-- Title -->
-                <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-                  Do I need a team?
-                </div>
-
-                <!-- Body -->
-                <div class="mdl-typography--body-1 mdl-typography--text-left">
-                  Teams of up to 4 are allowed. You may work as an individual, but we recommend collaborating. There will be a team mixer at
-                  the start of the hackathon.
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="mdl-card card grid-item">
-
-                <!-- Title -->
-                <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-                  What are the rules?
-                </div>
-
-                <!-- Body -->
-                <div class="mdl-typography--body-1 mdl-typography--text-left">
-                  Be nice, respectful, and have fun! Hackers are expected to behave appropriately and safely at all times.
-                </div>
-              </div>
-
-              <!-- Card -->
-              <div class="mdl-card card grid-item">
-
-                <!-- Title -->
-                <div class="mdl-typography--text-left mdl-typography--title section-subtitle">
-                  I have other questions!
-                </div>
-
-                <!-- Body -->
-                <div class="mdl-typography--body-1 mdl-typography--text-left">
-                  Contact us through our Facebook, Twitter, or email (
-                  <a href="mailto:contact@mv-hacks.com" style='color: #2D112A;'>contact@mv-hacks.com</a>).
-                </div>
-              </div>
-              <!-- end card -->
+              <!-- end staggered grid -->
             </div>
-            <!-- end staggered grid -->
+            <!-- end content grid -->
           </div>
-          <!-- end content grid -->
-        </div>
-        <!-- end FAQ -->
+          <!-- end FAQ -->
 
-        <!-- Sponsors -->
-        <div id='sponsors' style='background-color:#EF4339'>
-          <div class="content">
+          <!-- Sponsors -->
+          <div id='sponsors' style='background-color:#EF4339'>
+            <div class="content">
 
-            <!-- Title -->
-            <div class="mdl-typography--display-2 section-title" style="margin-bottom:24px; color: #2D112A">
-              Sponsors
+              <!-- Title -->
+              <div class="mdl-typography--display-2 section-title" style="margin-bottom:24px; color: #2D112A">
+                Sponsors
+              </div>
+
+              <!-- Prospectus -->
+              <div style="margin-bottom: 64px; margin-top:0px; color:#2D112A;">
+                <div class="mdl-typography&#45;&#45;headline" style="margin-bottom:12px">Interested in sponsoring?</div>
+                <button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;" style='background-color: #2D112A; color: #EF4339;'
+                  onclick="location.href='https://docs.google.com/document/d/1n4yjQ6siiVK-EPrY_5Wga8aMTsD07FbjnI2qS0YEgy0/edit?usp=sharing'">
+                  View prospectus
+                </button>
+                <div style="margin-top:12px">Email us at
+                  <a href="mailto:contact@mv-hacks.com" style='color: #2D112A'>contact@mv-hacks.com</a>!</div>
+              </div>
+
+              <!-- Logos -->
             </div>
-
-            <!-- Prospectus -->
-            <div style="margin-bottom: 64px; margin-top:0px; color:#2D112A;">
-              <div class="mdl-typography&#45;&#45;headline" style="margin-bottom:12px">Interested in sponsoring?</div>
-              <button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;" style='background-color: #2D112A; color: #EF4339;'
-                onclick="location.href='https://docs.google.com/document/d/1n4yjQ6siiVK-EPrY_5Wga8aMTsD07FbjnI2qS0YEgy0/edit?usp=sharing'">
-                View prospectus
-              </button>
-              <div style="margin-top:12px">Email us at
-                <a href="mailto:contact@mv-hacks.com" style='color: #2D112A'>contact@mv-hacks.com</a>!</div>
-            </div>
-
-            <!-- Logos -->
           </div>
-        </div>
 
-        <!-- Team List -->
-        <div class="colored-bg content-padding mdl-shadow--2dp shadow-margin" style='color:#EF4339; background-color:#2D112A;'>
-          <div class="content mdl-typography--subhead" style="max-width: 960px;">
+          <!-- Team List -->
+          <div class="colored-bg content-padding mdl-shadow--2dp shadow-margin" style='color:#EF4339; background-color:#2D112A;'>
+            <div class="content mdl-typography--subhead" style="max-width: 960px;">
 
-            <!-- Title -->
-            <div class="mdl-typography--display-2 section-title" style="margin-bottom: 16px" id='the-team'>
-              The Team
-            </div>
-
-            <div class="mdl-grid" style="padding:0; justify-content: center">
-
-              <div class="person mdl-cell mdl-cell--2-col">
-                <img src="images/profiles/2018/Akhand.jpeg" />
-                <div>Akhand Dugar</div>
-                <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-                  <a href="https://github.com/akspaks" target='_blank'>
-                    <img src="images/social/github-box.svg" />
-                  </a>
-                </button>
-                <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-                  <a href="https://www.linkedin.com/in/akhand-dugar-352434160/" target='_blank'>
-                    <img src="images/social/linkedin-box.svg" />
-                  </a>
-                </button>
+              <!-- Title -->
+              <div class="mdl-typography--display-2 section-title" style="margin-bottom: 16px" id='the-team'>
+                The Team
               </div>
 
-              <div class="person mdl-cell mdl-cell--2-col">
-                <img src="images/profiles/2017/marc.png" />
-                <div>Marc Bacvanski</div>
-                <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-                  <a href="https://github.com/mbacvanski" target='_blank'>
-                    <img src="images/social/github-box.svg" />
-                  </a>
-                </button>
-                <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-                  <a href="https://www.linkedin.com/in/mbacvanski/" target='_blank'>
-                    <img src="images/social/linkedin-box.svg" />
-                  </a>
-                </button>
-              </div>
+              <div class="mdl-grid" style="padding:0; justify-content: center">
 
-              <div class="person mdl-cell mdl-cell--2-col">
-                <img src="images/profiles/2017/stuart.jpg" />
-                <div>Stuart Trappe</div>
-                <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-                  <a href="https://github.com/GentlemanShark">
-                    <img src="images/social/github-box.svg" />
-                  </a>
-                </button>
-                <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-                  <a href="https://www.linkedin.com/in/stuart-trappe/" target='_blank'>
-                    <img src="images/social/linkedin-box.svg" />
-                  </a>
-                </button>
+                <div class="person mdl-cell mdl-cell--2-col">
+                  <img src="images/profiles/2018/Akhand.jpeg" />
+                  <div>Akhand Dugar</div>
+                  <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                    <a href="https://github.com/akspaks" target='_blank'>
+                      <img src="images/social/github-box.svg" />
+                    </a>
+                  </button>
+                  <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                    <a href="https://www.linkedin.com/in/akhand-dugar-352434160/" target='_blank'>
+                      <img src="images/social/linkedin-box.svg" />
+                    </a>
+                  </button>
+                </div>
+
+                <div class="person mdl-cell mdl-cell--2-col">
+                  <img src="images/profiles/2017/marc.png" />
+                  <div>Marc Bacvanski</div>
+                  <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                    <a href="https://github.com/mbacvanski" target='_blank'>
+                      <img src="images/social/github-box.svg" />
+                    </a>
+                  </button>
+                  <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                    <a href="https://www.linkedin.com/in/mbacvanski/" target='_blank'>
+                      <img src="images/social/linkedin-box.svg" />
+                    </a>
+                  </button>
+                </div>
+
+                <div class="person mdl-cell mdl-cell--2-col">
+                  <img src="images/profiles/2017/stuart.jpg" />
+                  <div>Stuart Trappe</div>
+                  <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                    <a href="https://github.com/GentlemanShark">
+                      <img src="images/social/github-box.svg" />
+                    </a>
+                  </button>
+                  <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                    <a href="https://www.linkedin.com/in/stuart-trappe/" target='_blank'>
+                      <img src="images/social/linkedin-box.svg" />
+                    </a>
+                  </button>
+                </div>
               </div>
-            </div>
-            <br>
-            <div class="mdl-typography--display-2 section-title" style="margin-bottom: 16px">
-              Campus Ambassadors
-            </div>
-            <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;primary"
+              <br>
+              <div class="mdl-typography--display-2 section-title" style="margin-bottom: 16px">
+                Campus Ambassadors
+              </div>
+              <!--<button class="mdl-button mdl-js-button mdl-button&#45;&#45;raised mdl-js-ripple-effect mdl-button&#45;&#45;primary"
                   onclick="location.href='mailto:contact@mv-hacks.com';" style="background-color: #fff; color: #4CAF50; margin-top: 24px">
             Become a campus ambassador
           </button>-->
+            </div>
+            <!-- end content -->
           </div>
-          <!-- end content -->
-        </div>
-        <!-- end team list -->
+          <!-- end team list -->
 
-        <div class="footer" style='color: #2D112A; background-color:#EF4339;'>
-          <div style="display:inline-block">
-            <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-              <a href="https://github.com/mvhacks" target='_blank'>
-                <img src="images/social/github-box.svg" />
-              </a>
-            </button>
-            <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-              <a href="https://www.facebook.com/mvhacks" target='_blank'>
-                <img src="images/social/facebook-box.svg" />
-              </a>
-            </button>
-            <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-              <a href="https://www.instagram.com/mvhacks" target='_blank'>
-                <img src="images/social/instagram.svg" />
-              </a>
-            </button>
-            <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-              <a href="https://twitter.com/MVHacksCA" target='_blank'>
-                <img src="images/social/twitter-box.svg" />
-              </a>
-            </button>
-            <button class="social-button mdl-button mdl-js-button mdl-button--icon">
-              <a href="mailto:contact@mv-hacks.com">
-                <img src="images/social/email.svg" />
-              </a>
-            </button>
-          </div>
+          <div class="footer" style='color: #2D112A; background-color:#EF4339;'>
+            <div style="display:inline-block">
+              <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                <a href="https://github.com/mvhacks" target='_blank'>
+                  <img src="images/social/github-box.svg" />
+                </a>
+              </button>
+              <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                <a href="https://www.facebook.com/mvhacks" target='_blank'>
+                  <img src="images/social/facebook-box.svg" />
+                </a>
+              </button>
+              <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                <a href="https://www.instagram.com/mvhacks" target='_blank'>
+                  <img src="images/social/instagram.svg" />
+                </a>
+              </button>
+              <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                <a href="https://twitter.com/MVHacksCA" target='_blank'>
+                  <img src="images/social/twitter-box.svg" />
+                </a>
+              </button>
+              <button class="social-button mdl-button mdl-js-button mdl-button--icon">
+                <a href="mailto:contact@mv-hacks.com">
+                  <img src="images/social/email.svg" />
+                </a>
+              </button>
+            </div>
 
-          <br/>
-
-          <div class="valign-center" style="margin-top: 8px; margin-bottom: 8px;">
-            Made with&nbsp;
-            <i class="material-icons material-icons-small">keyboard</i>&nbsp;and&nbsp;
-            <i class="material-icons material-icons-small">mouse</i>&nbsp;in Mountain View
-          </div>
-          <br>
-          <div class="valign-center" style="margin-top: 8px;">
-            MVHacks is a project of Hack Club. Hack Club is a 501(c)(3) nonprofit incubator for hackathons.
             <br/>
-          </div>
-        </div>
 
-        <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
-          <div class="mdl-snackbar__text"></div>
-          <button class="mdl-snackbar__action" type="button"></button>
-        </div>
+            <div class="valign-center" style="margin-top: 8px; margin-bottom: 8px;">
+              Made with&nbsp;
+              <i class="material-icons material-icons-small">keyboard</i>&nbsp;and&nbsp;
+              <i class="material-icons material-icons-small">mouse</i>&nbsp;in Mountain View
+            </div>
+            <br>
+            <div class="valign-center" style="margin-top: 8px;">
+              MVHacks is a project of Hack Club. Hack Club is a 501(c)(3) nonprofit incubator for hackathons.
+              <br/>
+            </div>
+          </div>
+
+          <div id="snackbar" class="mdl-js-snackbar mdl-snackbar">
+            <div class="mdl-snackbar__text"></div>
+            <button class="mdl-snackbar__action" type="button"></button>
+          </div>
 
     </main>
     <!-- end main content -->

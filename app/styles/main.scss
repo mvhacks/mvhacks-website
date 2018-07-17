@@ -7,12 +7,12 @@ html, body {
    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
  margin: 0;
  padding: 0;
- -webkit-tap-highlight-color: #11052D;
- color: #11052D;
+ -webkit-tap-highlight-color: #211023;
+ color: #211023;
 }
 
 a {
- color: #CF5E3C;
+ color: #DE6D33;
 }
 
 div {
@@ -43,8 +43,8 @@ div {
 
 // Background
 .header {
- background: url(../images/background2.jpg) bottom / cover;
- background-color: #CF5E3C;
+ background: url(../images/background2.png) bottom / cover;
+ background-color: #DE6D33;
  height: 100vh;
 }
 
@@ -115,8 +115,8 @@ div {
 
 // More Info background
 .colored-bg {
- background-color:#CF5E3C;
- color: #11052D;
+ background-color:#DE6D33;
+ color: #211023;
 }
 
 // The Team formatting
@@ -148,8 +148,8 @@ div {
 .grid-item {
  width: calc(33.3% - 8px);
  margin: 4px;
- background-color: #CF5E3C;
- color: #11052D;
+ background-color: #DE6D33;
+ color: #211023;
 }
 
 // TODO: Confirm that this CSS is actually relevant and targets something
@@ -179,7 +179,7 @@ div {
  width: 32px;
  height: 32px;
  font-size: 14px;
- color: #11052D;
+ color: #211023;
 }
 
 // Responsiveness stuff
@@ -248,7 +248,7 @@ div {
 }
 
 #nav {
-  background-color: #11052D;
+  background-color: #211023;
   text-align: left;
 }
 
@@ -263,14 +263,14 @@ div {
 
 //Buttons
 #button {
-  color: #CF5E3C;
+  color: #DE6D33;
 }
 
 #to-top {
   right: 30px;
   bottom: 12px;
   position: fixed;
-  color: #CF5E3C;
+  color: #DE6D33;
   background-color:white;
   width: 3.5%;
   height: 7%;
@@ -303,8 +303,8 @@ div {
   margin-top: -22px;
   padding: 16px;
   transition: 0.6s ease;
-  color: #11052D;
-  background-color: #CF5E3C;
+  color: #211023;
+  background-color: #DE6D33;
 }
 
 .dot {
@@ -312,7 +312,7 @@ div {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #CF5E3C;
+  background-color: #DE6D33;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;

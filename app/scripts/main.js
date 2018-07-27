@@ -78,6 +78,16 @@
       });
   }
 
+  // document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
+  //   document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer();
+  // });
+
+  // document.querySelector('.mdl-layout__drawer').addEventListener('click', function () {
+  //   document.querySelector('.mdl-layout__obfuscator').classList.remove('is-visible');
+  //   this.classList.remove('is-visible');
+  // }, false);
+
+
   function countdown(dateEnd) {
     var timer, days, hours, minutes, seconds;
 

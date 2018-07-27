@@ -47,7 +47,7 @@ div {
   height: 100vh;
 }
 
-.content {
+.header > .content {
   padding-bottom: 200px;
 }
 
@@ -61,7 +61,7 @@ div {
 
 // Logo
 #mvhacks-image {
-  max-height: calc(100vh - 400px);
+     max-height: calc(100vh - 480px);
   max-width: 100%;
 }
 

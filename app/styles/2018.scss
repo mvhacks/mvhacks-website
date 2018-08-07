@@ -61,7 +61,7 @@ div {
 
 // Logo
 #mvhacks-image {
-     max-height: calc(100vh - 480px);
+  max-height: calc(100vh - 480px);
   max-width: 100%;
 }
 
@@ -111,13 +111,13 @@ div {
   max-width: 1080px;
 }
 
-.odd-section {
-  background-color: #2D122A;
-  color: #FB7E57;
+.even-section {
+  background-color: #ee521f;
+  color: #ffffff;
 }
 
-.even-section {
-  background-color: #FB7E57;
+.odd-section {
+  background-color: #ffffff;
   color: #2D122A;
 }
 
@@ -150,7 +150,7 @@ div {
 .grid-item {
   width: calc(33.3% - 8px);
   margin: 4px;
-  background-color: #DA664B;
+  background-color: #eeeeee;
   color: #2D122A;
 }
 
@@ -245,7 +245,7 @@ div {
 //navigation
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
-  color: #AD4333;
+  color: #ee521f;
   padding-left: 12px;
 }
 
@@ -265,7 +265,7 @@ div {
 
 //Buttons
 #button {
-  color: #DA664B;
+  color: #ee521f;
 }
 
 //Scroll down button

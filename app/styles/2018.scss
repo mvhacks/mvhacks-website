@@ -12,7 +12,7 @@ html, body {
 }
 
 a {
-  color: #DA664B;
+  color: #ee521f;
 }
 
 div {
@@ -101,7 +101,7 @@ div {
   position: absolute;
   bottom: 48px;
   right: 64px;
-  color: orange;
+  color: #ee521f;
 }
 
 // FAQ wrapper
@@ -113,11 +113,11 @@ div {
 
 .even-section {
   background-color: #ee521f;
-  color: #ffffff;
+  color: white;
 }
 
 .odd-section {
-  background-color: #ffffff;
+  background-color: white;
   color: #2D122A;
 }
 
@@ -173,8 +173,8 @@ div {
 
 .footer {
   padding: ($padding * 2) $padding;
-  color: $footer-color;
-  background-color: $footer-bg-color;
+  color: #2D122A;
+  background-color: white;
 }
 
 .social-button {
@@ -245,7 +245,7 @@ div {
 //navigation
 .demo-layout-transparent .mdl-layout__header,
 .demo-layout-transparent .mdl-layout__drawer-button {
-  color: #ee521f;
+  color: #2D122A;
   padding-left: 12px;
 }
 
@@ -294,50 +294,17 @@ div {
   display: none;
 }
 
-#slides-forward {
-  right: 25%;
-}
-
-#slides-backward {
-  left: 25%;
-}
-
-#slides-forward, #slides-backward {
-  position: absolute;
-  top: 157%;
-  margin-top: -22px;
-  padding: 16px;
-  transition: 0.6s ease;
-  color: #2D122A;
-  background-color: #ee521f;
-}
-
 @media (max-height: 600px) {
   #slides-forward, #slides-backward {
     display: none;
   }
 }
 
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: gray;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #ee521f;
-}
-
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
+  -webkit-animation-duration: 1s;
   animation-name: fade;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {

@@ -238,6 +238,80 @@
       <!-- end What Is MVHacks -->
     </div>
 
+          <!-- Slideshow -->
+          <div class='slideshow'>
+            <div class='slides fade'>
+              <img src="images/event/mrnguyen.jpg" style='width: 40%; padding-bottom: 32px;'>
+            </div>
+            <div class='slides fade'>
+              <img src="images/event/hackers.jpg" style='width: 40%; padding-bottom: 32px;'>
+            </div>
+            <div class='slides fade'>
+              <img src="images/event/awards.jpg" style='width: 40%; padding-bottom: 32px;'>
+            </div>
+            <div class='slides fade'>
+              <img src="images/event/presentation.jpg" style='width: 30%; padding-bottom: 32px;'>
+            </div>
+            <div class='slides fade'>
+              <img src="images/event/food.jpg" style='width: 20%; padding-bottom: 32px;'>
+            </div>
+            <!-- Dots -->
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <div class="slab mdl-typography--body-1" style="margin-bottom: 32px; margin-top: 32px; vertical-align: middle">
+              For more photos, see
+              <a href="http://club.mvhs.io" target='_blank'>club.mvhs.io</a>
+            </div>
+            <br>
+          </div>
+          <!-- Buttons -->
+          <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" onclick="plusSlides(-1)" id='slides-backward'>
+            <i class='material-icons'>arrow_back</i>
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" onclick="plusSlides(1)" id='slides-forward'>
+            <i class='material-icons'>arrow_forward</i>
+          </button>
+          <!-- End slideshow -->
+    
+      <!-- Slideshow code -->
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+    
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+    
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+    
+      </script>
+      <!-- End slideshow code -->
+
     <!-- Schedule -->
     <div class="content-padding mdl-shadow--2dp shadow-margin even-section">
       <div class="content mdl-grid" style="max-width: 1200px">

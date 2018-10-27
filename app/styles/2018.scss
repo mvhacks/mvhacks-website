@@ -23,7 +23,6 @@ div {
 .section-title {
   padding-top: 24px;
   padding-bottom: 24px;
-  font-family: 'Roboto Slab';
 }
 
 .section-subtitle {
@@ -113,7 +112,7 @@ div {
 }
 
 .even-section {
-  background-color: #ee5500;
+  background-color: #ee521f;
   color: white;
 }
 
@@ -309,11 +308,11 @@ div {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .5} 
+  from {opacity: .75} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .5} 
+  from {opacity: .75} 
   to {opacity: 1}
 }

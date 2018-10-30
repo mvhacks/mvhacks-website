@@ -2,6 +2,7 @@ node_modules
 dist/
 .tmp
 app.yaml
+.firebase/
 
 ### OSX ###
 .DS_Store

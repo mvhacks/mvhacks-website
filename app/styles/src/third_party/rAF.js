@@ -27,7 +27,7 @@
     var vp = vendors[i];
     window.requestAnimationFrame = window[vp + 'RequestAnimationFrame'];
     window.cancelAnimationFrame = (window[vp + 'CancelAnimationFrame'] ||
-    window[vp + 'CancelRequestAnimationFrame']);
+      window[vp + 'CancelRequestAnimationFrame']);
     window['requestAnimationFrame'] = window.requestAnimationFrame;
     window['cancelAnimationFrame'] = window.cancelAnimationFrame;
   }

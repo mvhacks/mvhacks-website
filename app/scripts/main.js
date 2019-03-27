@@ -102,7 +102,7 @@
 
     function calculate() {
       var dateStart = new Date();
-      var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
+      var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000);
 
       if (timeRemaining >= 0) {
         days = parseInt(timeRemaining / 86400);

@@ -282,7 +282,7 @@ componentHandler = (function () {
     // property access. You'll therefore see the `foo.bar || foo['bar']`
     // pattern repeated across this method.
     var widgetMissing = (typeof config.widget === 'undefined' &&
-    typeof config['widget'] === 'undefined');
+      typeof config['widget'] === 'undefined');
     var widget = true;
 
     if (!widgetMissing) {
@@ -307,7 +307,7 @@ componentHandler = (function () {
     });
 
     if (config.constructor.prototype
-        .hasOwnProperty(componentConfigProperty_)) {
+      .hasOwnProperty(componentConfigProperty_)) {
       throw new Error(
         'MDL component classes must not have ' + componentConfigProperty_ +
         ' defined as a property.');

@@ -231,7 +231,7 @@
 
       if (this.input_) {
         if (this.input_.hasAttribute(
-            /** @type {string} */ (this.Constant_.MAX_ROWS_ATTRIBUTE))) {
+          /** @type {string} */ (this.Constant_.MAX_ROWS_ATTRIBUTE))) {
           this.maxRows = parseInt(this.input_.getAttribute(
             /** @type {string} */ (this.Constant_.MAX_ROWS_ATTRIBUTE)), 10);
           if (isNaN(this.maxRows)) {

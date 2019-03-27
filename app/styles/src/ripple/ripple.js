@@ -76,7 +76,7 @@
       this.boundHeight = rect.height;
       this.boundWidth = rect.width;
       this.rippleSize_ = Math.sqrt(rect.width * rect.width +
-          rect.height * rect.height) * 2 + 2;
+        rect.height * rect.height) * 2 + 2;
       this.rippleElement_.style.width = this.rippleSize_ + 'px';
       this.rippleElement_.style.height = this.rippleSize_ + 'px';
     }
@@ -139,7 +139,7 @@
       var recentering =
         this.element_.classList.contains(this.CssClasses_.RIPPLE_CENTER);
       if (!this.element_.classList.contains(
-          this.CssClasses_.RIPPLE_EFFECT_IGNORE_EVENTS)) {
+        this.CssClasses_.RIPPLE_EFFECT_IGNORE_EVENTS)) {
         this.rippleElement_ = this.element_.querySelector('.' +
           this.CssClasses_.RIPPLE);
         this.frameCount_ = 0;

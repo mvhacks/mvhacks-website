@@ -41,10 +41,10 @@ div {
 /* Front Page */
 
 // Background
-.header {
-  background: #8bc34a url(../images/background_2017.jpg) bottom / cover;
-  height: 100vh;
-}
+   .header {
+     background: #8bc34a url(../images/background_2017.jpg) bottom / cover;
+     height: 100vh;
+   }
 
 .header > .content {
   padding-bottom: 200px;
@@ -59,18 +59,18 @@ div {
 }
 
 // Logo
-#mvhacks-image {
-  max-height: calc(100vh - 480px);
-  max-width: 100%;
-}
+   #mvhacks-image {
+     max-height: calc(100vh - 480px);
+     max-width: 100%;
+   }
 
 // Content wrapper
-.content {
-  position: relative;
-  margin: 0 auto;
-  max-width: 840px;
-  padding: 32px 16px 80px;
-}
+   .content {
+     position: relative;
+     margin: 0 auto;
+     max-width: 840px;
+     padding: 32px 16px 80px;
+   }
 
 .slab {
   font-family: 'Roboto Slab', serif;
@@ -78,14 +78,14 @@ div {
 }
 
 // Sign up card
-.sign-up-card {
-  margin: 0 auto;
-  width: calc(100% - 32px);
-  max-width: 400px;
-  min-height: 0;
-  padding: 16px 0 0 0;
-  box-sizing: content-box;
-}
+   .sign-up-card {
+     margin: 0 auto;
+     width: calc(100% - 32px);
+     max-width: 400px;
+     min-height: 0;
+     padding: 16px 0 0 0;
+     box-sizing: content-box;
+   }
 
 .sign-up-button {
   border-radius: 0;
@@ -95,31 +95,32 @@ div {
   padding-bottom: 8px;
 }
 
+
 // Scroll down button
-#down-button {
-  position: absolute;
-  bottom: 48px;
-  right: 64px;
-}
+   #down-button {
+     position: absolute;
+     bottom: 48px;
+     right: 64px;
+   }
 
 // FAQ wrapper
-.content-grid {
-  padding-left: 4px;
-  padding-right: 4px;
-  max-width: 1080px;
-}
+   .content-grid {
+     padding-left: 4px;
+     padding-right: 4px;
+     max-width: 1080px;
+   }
 
 // More Info background
-.colored-bg {
-  background-color: #4CAF50;
-  color: #fff;
-}
+   .colored-bg {
+     background-color: #4CAF50;
+     color: #fff;
+   }
 
 // The Team formatting
-.person {
-  min-width: 116px;
-  max-width: 140px;
-}
+   .person {
+     min-width: 116px;
+     max-width: 140px;
+   }
 
 .person-ambassador {
   min-width: 96px;
@@ -137,37 +138,37 @@ div {
 
 // TODO: Although this CSS targets the schedule box, changing it doesn't seem to have an effect on anything. OK to remove?
 // Schedule box
-.shadow-margin {
-  margin-bottom: 8px
-}
+   .shadow-margin {
+     margin-bottom: 8px
+   }
 
 // FAQ wrapper
-.grid-sizer {
-  width: 33.3%;
-}
+   .grid-sizer {
+     width: 33.3%;
+   }
 
 // FAQ card
-.grid-item {
-  width: calc(33.3% - 8px);
-  margin: 4px;
-}
+   .grid-item {
+     width: calc(33.3% - 8px);
+     margin: 4px;
+   }
 
 // TODO: Confirm that this CSS is actually relevant and targets something
-.grid-item-width2 {
-  width: calc(66.6% - 8px);
-}
+   .grid-item-width2 {
+     width: calc(66.6% - 8px);
+   }
 
 // FAQ card
-.card {
-  @include shadow-2dp();
-  padding: 24px;
-  min-height: 0;
-}
+   .card {
+   @include shadow-2dp();
+     padding: 24px;
+     min-height: 0;
+   }
 
 // FAQ card title
-.card > .section-subtitle {
-  padding-bottom: 12px;
-}
+   .card > .section-subtitle {
+     padding-bottom: 12px;
+   }
 
 .footer {
   padding: ($padding * 2) $padding;
@@ -242,9 +243,7 @@ div {
 }
 
 //Slideshow
-* {
-  box-sizing: border-box
-}
+* {box-sizing: border-box}
 
 .slideshow {
   max-width: 100%;
@@ -270,19 +269,11 @@ div {
 }
 
 @-webkit-keyframes fade {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
+  from {opacity: 0} 
+  to {opacity: 1}
 }
 
 @keyframes fade {
-  from {
-    opacity: 0
-  }
-  to {
-    opacity: 1
-  }
+  from {opacity: 0} 
+  to {opacity: 1}
 }

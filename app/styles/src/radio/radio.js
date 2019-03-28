@@ -241,7 +241,7 @@
 
       var rippleContainer;
       if (this.element_.classList.contains(
-        this.CssClasses_.RIPPLE_EFFECT)) {
+          this.CssClasses_.RIPPLE_EFFECT)) {
         this.element_.classList.add(
           this.CssClasses_.RIPPLE_IGNORE_EVENTS);
         rippleContainer = document.createElement('span');

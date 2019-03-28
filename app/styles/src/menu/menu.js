@@ -193,7 +193,7 @@
         // Do not position the menu automatically. Requires the developer to
         // manually specify position.
       } else if (this.element_.classList.contains(
-        this.CssClasses_.BOTTOM_RIGHT)) {
+          this.CssClasses_.BOTTOM_RIGHT)) {
         // Position below the "for" element, aligned to its right.
         this.container_.style.right = (forRect.right - rect.right) + 'px';
         this.container_.style.top =
